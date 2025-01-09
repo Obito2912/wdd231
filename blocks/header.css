@@ -1,0 +1,27 @@
+header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+header h1 {
+    margin: auto;
+}
+
+header>img {
+    box-shadow: 1px 1px 5px #fff;
+}
+
+.menu img {
+    position: absolute;
+    bottom: calc(100% - 40px);
+    left: calc(100% - 40px);
+    border-radius: 10px;
+    /* -webkit-tap-highlight-color: transparent; */
+}
+
+.menu img:hover {
+    background-color: #cd5c5c;
+}
