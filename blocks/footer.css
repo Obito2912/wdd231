@@ -2,8 +2,8 @@ footer {
     background-color: #000;
     color: #fff;
     text-align: center;
-    font-size: 1.2rem;
-    padding: .5em 1em;
+    font-size: 1rem;
+    padding: .5em 0;
     place-content: center;
 }
 
