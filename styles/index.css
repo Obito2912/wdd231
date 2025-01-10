@@ -42,7 +42,7 @@ header>img {
     bottom: calc(100% - 40px);
     left: calc(100% - 40px);
     border-radius: 10px;
-    transition: transform 1s ease;
+    transition: transform .7s ease;
     touch-action: manipulation;
 }
 
@@ -52,7 +52,7 @@ header>img {
 
 .menu img:active,
 .nav__list_container li:has(a:active) {
-    background-color: rgb(96, 204, 164);
+    background-color: #cc5555;
     color: #000;
 }
 
@@ -65,7 +65,7 @@ header>img {
     width: 100%;
     background-color: #000;
     transform: scale(0);
-    transition: transform 1s ease;
+    transition: transform .7s ease;
 }
 
 .js-open-navBar {
@@ -98,8 +98,12 @@ footer {
     color: #fff;
     text-align: center;
     font-size: 1rem;
-    padding: .5em 0;
+    padding: .5em 1.5em;
     place-content: center;
+}
+
+footer p:last-child {
+    font-size: .7rem;
 }
 
 footer p:last-child {
