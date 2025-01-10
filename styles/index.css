@@ -1,8 +1,17 @@
+/* ----------------------------------------------------- RESET ----------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
+:root {
+    --regular-text: "Nunito", serif;
+    --titled-text: "Orbitron", serif;
+}
 
 html {
     height: 100%;
@@ -13,10 +22,18 @@ body {
     grid: 100px auto 110px / auto;
     min-height: 100vh;
     font-size: 16px;
+    font-family: var(--regular-text);
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--titled-text);
 }
 
 /* ----------------------------------------------------- HEADER ----------------------------------------------------- */
@@ -53,7 +70,7 @@ header>img {
 .menu img:active,
 .nav__list_container li:has(a:active) {
     background-color: #cc5555;
-    color: #000;
+    color: #fff;
 }
 
 .nav {
@@ -91,8 +108,77 @@ header>img {
     color: #000;
 }
 
-/* ----------------------------------------------------- FOOTER ----------------------------------------------------- */
+/* ----------------------------------------------------- MAIN ----------------------------------------------------- */
 
+main {
+    padding: 1em;
+    background-color: #e8e8e8;
+}
+
+section h2 {
+    text-align: center;
+    background-color: #ffd000;
+}
+
+.section__content {
+    padding: .5em;
+}
+
+.section__content ul li {
+    margin-left: 1em;
+}
+
+.section__content figure {
+    text-align: center;
+}
+
+.course__buttons {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    gap: 5px;
+    border-bottom: 1px solid #ffd000;
+}
+
+.button {
+    padding: .5em 1.5em;
+    margin-bottom: .5em;
+    outline: none;
+    background-color: #fff;
+    border: 1px solid #adadad;
+}
+
+.button:active,
+.button:focus {
+    border: 1px solid #ff0000;
+}
+
+.js-course-list ul{
+    display: grid;
+    gap: 5px;
+    text-align: center;
+    margin-top: .5em;
+}
+
+.js-course-list ul li {
+    list-style: none;
+    border-radius: 5px;
+    background-color: #cfcfcf;
+    margin-left: 0;
+    padding: .5em 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.js-course-list .completed {
+    background-color: #12642c;
+}
+
+.js-course-list .incomplete {
+    background-color: #a62626;
+}
+
+/* ----------------------------------------------------- FOOTER ----------------------------------------------------- */
 footer {
     background-color: #000;
     color: #fff;
