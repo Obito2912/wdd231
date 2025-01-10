@@ -111,17 +111,23 @@ header>img {
 /* ----------------------------------------------------- MAIN ----------------------------------------------------- */
 
 main {
-    padding: 1em;
+    padding: 1em 1em 0;
     background-color: #e8e8e8;
+}
+
+section {
+    margin-bottom: 1.5em;;
 }
 
 section h2 {
     text-align: center;
-    background-color: #ffd000;
+    background-color: #1f6600;
+    color: #fff;
+    padding: .8em 0;
 }
 
 .section__content {
-    padding: .5em;
+    padding: .5em .5em 0;
 }
 
 .section__content ul li {
@@ -167,15 +173,15 @@ section h2 {
     margin-left: 0;
     padding: .5em 0;
     font-weight: bold;
-    color: #fff;
+    color: #000;
 }
 
 .js-course-list .completed {
-    background-color: #12642c;
+    background-color: #5ea63f;
 }
 
 .js-course-list .incomplete {
-    background-color: #a62626;
+    background-color: #cacaca;
 }
 
 /* ----------------------------------------------------- FOOTER ----------------------------------------------------- */
