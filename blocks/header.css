@@ -11,7 +11,7 @@ header h1 {
 }
 
 header>img {
-    box-shadow: 1px 1px 5px #fff;
+    box-shadow: 0 0 5px 0 #fff;
 }
 
 .menu img {
@@ -19,9 +19,45 @@ header>img {
     bottom: calc(100% - 40px);
     left: calc(100% - 40px);
     border-radius: 10px;
-    /* -webkit-tap-highlight-color: transparent; */
+    transition: transform 1s ease;
+    touch-action: manipulation;
 }
 
-.menu img:hover {
+.rotate {
+    transform: rotate(180deg);
+}
+
+.menu img:active {
     background-color: #cd5c5c;
+}
+
+.nav {
+    visibility: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center; 
+    width: 100%;
+    background-color: #000;
+    transform: scale(0);
+    transition: transform 1s ease;
+}
+
+.js-open-navBar {
+    visibility: visible;
+    transform: scale(1);
+}
+
+.nav__list_container li {
+    list-style: none;
+    margin-top: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.nav__list_container a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    -webkit-tap-highlight-color: transparent;
 }
