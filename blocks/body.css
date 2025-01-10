@@ -1,5 +1,0 @@
-body {
-    display: grid;
-    grid: 100px auto 110px / auto;
-    min-height: 100vh;
-}
