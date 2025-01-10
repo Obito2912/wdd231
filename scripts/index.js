@@ -86,16 +86,23 @@ const lastUpdate = document.querySelector('#lastModified');
 const profilePic = document.querySelector('.js-profile-pic');
 const navBar = document.querySelector('.nav');
 const coursesSection = document.querySelector('.courses__section');
+const allBtn = document.querySelector('.allBtn');
+const cseBtn = document.querySelector('.cseBtn');
+const wddBtn = document.querySelector('.wddBtn');
+const cseCourses = courses.filter(course => course.subject === 'CSE');
+const wddCourses = courses.filter(course => course.subject === 'WDD');
+let courseList;
 
 copyrightYear.innerHTML = `©${year}<br>`;
 lastUpdate.textContent = `Last update: ${lastModified}`;
 
-function renderCourses() {
-    const courseList = document.createElement('div');
+function renderCourses(courses) {
+    courseList = document.createElement('div');
     courseList.classList.add('js-course-list');
     const listContainer = document.createElement('ul');
     courses.forEach(course => {
         const courseName = document.createElement('li');
+        courseName.classList.add('course__list');
         courseName.textContent = `${course.subject } ${course.number}`;
         listContainer.append(courseName);
         if (course.completed === true) {
@@ -108,9 +115,19 @@ function renderCourses() {
     courseList.append(listContainer);
 }
 
+function filterOnClick(courses, button) {
+    button.addEventListener('click', () => {
+        courseList.innerHTML = '';
+        renderCourses(courses);
+    });
+}
+
 profilePic.addEventListener('click', () => {
     profilePic.classList.toggle('rotate');
     navBar.classList.toggle('js-open-navBar');
 });
 
-renderCourses();
+renderCourses(courses);
+filterOnClick(courses, allBtn);
+filterOnClick(cseCourses, cseBtn);
+filterOnClick(wddCourses, wddBtn);

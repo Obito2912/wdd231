@@ -11,6 +11,9 @@
 :root {
     --regular-text: "Nunito", serif;
     --titled-text: "Orbitron", serif;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-dark-green: #1f6600;
 }
 
 html {
@@ -39,8 +42,6 @@ h4 {
 /* ----------------------------------------------------- HEADER ----------------------------------------------------- */
 
 header {
-    background-color: #000;
-    color: #fff;
     display: flex;
     padding: 10px;
     position: relative;
@@ -67,20 +68,12 @@ header>img {
     transform: rotate(180deg);
 }
 
-.menu img:active,
-.nav__list_container li:has(a:active) {
-    background-color: #cc5555;
-    color: #fff;
-}
-
 .nav {
     /* opacity: 0; */
     position: absolute;
     top: 100%;
-    left: 0;
-    text-align: center; 
+    left: 0; 
     width: 100%;
-    background-color: #000;
     transform: scale(0);
     transition: transform .7s ease;
 }
@@ -93,19 +86,13 @@ header>img {
 .nav__list_container li {
     list-style: none;
     padding: 5px 0;
-    border-bottom: 1px solid #cc5555;
 }
 
 .nav__list_container a {
     width: 100%;
     display: block;
     text-decoration: none;
-    color: #fff;
     -webkit-tap-highlight-color: transparent;
-}
-
-.nav__list_container a:active {
-    color: #000;
 }
 
 /* ----------------------------------------------------- MAIN ----------------------------------------------------- */
@@ -120,9 +107,7 @@ section {
 }
 
 section h2 {
-    text-align: center;
-    background-color: #1f6600;
-    color: #fff;
+    background-color: var(--color-dark-green);
     padding: .8em 0;
 }
 
@@ -130,12 +115,13 @@ section h2 {
     padding: .5em .5em 0;
 }
 
-.section__content ul li {
+.course__work_li {
     margin-left: 1em;
 }
 
 .section__content figure {
-    text-align: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .course__buttons {
@@ -143,37 +129,29 @@ section h2 {
     justify-content: center;
     margin-inline: auto;
     gap: 5px;
-    border-bottom: 1px solid #ffd000;
 }
 
 .button {
     padding: .5em 1.5em;
     margin-bottom: .5em;
     outline: none;
-    background-color: #fff;
+    background-color: var(--color-white);
     border: 1px solid #adadad;
 }
 
-.button:active,
-.button:focus {
-    border: 1px solid #ff0000;
-}
-
-.js-course-list ul{
+.js-course-list ul {
     display: grid;
     gap: 5px;
-    text-align: center;
     margin-top: .5em;
 }
 
-.js-course-list ul li {
+.course__list {
     list-style: none;
     border-radius: 5px;
-    background-color: #cfcfcf;
     margin-left: 0;
     padding: .5em 0;
     font-weight: bold;
-    color: #000;
+    color: var(--color-black);
 }
 
 .js-course-list .completed {
@@ -185,10 +163,8 @@ section h2 {
 }
 
 /* ----------------------------------------------------- FOOTER ----------------------------------------------------- */
+
 footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
     font-size: 1rem;
     padding: .5em 3em;
     place-content: center;
@@ -200,4 +176,44 @@ footer p:last-child {
 
 footer p:last-child {
     margin-top: 10px;
+}
+
+/* ----------------------------------------------------- GROUPED RULES ----------------------------------------------------- */
+
+header,
+nav,
+footer {
+    background-color: var(--color-black);
+}
+
+header,
+.menu img:active,
+.nav__list_container li:has(a:active),
+.nav__list_container a,
+section h2,
+footer {
+    color: var(--color-white);
+}
+
+.menu img:active,
+.nav__list_container li:has(a:active) {
+    background-color: var(--color-dark-green);
+}
+
+.nav__list_container li,
+.course__buttons {
+    border-bottom: 1px solid #1f6600;
+}
+
+.button:active,
+.button:focus {
+    border: 1px solid #1f6600;
+}
+
+nav,
+section h2,
+.section__content figure,
+.js-course-list ul,
+footer {
+    text-align: center;
 }
