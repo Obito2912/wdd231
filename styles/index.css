@@ -176,7 +176,6 @@ main {
 
 section {
     margin-bottom: 1.5em;
-    ;
 }
 
 section h2 {
@@ -206,6 +205,15 @@ section h2 {
     outline: none;
     background-color: var(--color-white);
     border: 1px solid #adadad;
+}
+
+.creditsInfo__div p {
+    background-color: #adadad;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 60%;
+    margin-inline: auto;
+    padding: .3em 0;
 }
 
 .js-course-list ul {
@@ -308,7 +316,7 @@ footer {
 }
 
 .nav__list_container li,
-.course__buttons {
+.creditsInfo__div {
     border-bottom: 1px solid #1f6600;
 }
 

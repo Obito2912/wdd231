@@ -96,6 +96,20 @@ let courseList;
 copyrightYear.innerHTML = `©${year}<br>`;
 lastUpdate.textContent = `Last update: ${lastModified}`;
 
+function displayCreditsInfo(courses) {
+    const existingCreditsInfo = document.querySelector('.creditsInfo__div');
+    if (existingCreditsInfo) {
+        existingCreditsInfo.remove();
+    }
+
+    const creditsInfoDiv = document.createElement('div');
+    creditsInfoDiv.classList.add('creditsInfo__div');
+    const paraEl = document.createElement('p');
+    paraEl.textContent = `Total Credits: ${reduce(courses)}`;
+    creditsInfoDiv.append(paraEl);
+    coursesSection.append(creditsInfoDiv);
+}
+
 function renderCourses(courses) {
     courseList = document.createElement('div');
     courseList.classList.add('js-course-list');
@@ -118,8 +132,16 @@ function renderCourses(courses) {
 function filterOnClick(courses, button) {
     button.addEventListener('click', () => {
         courseList.innerHTML = '';
+        displayCreditsInfo(courses);
         renderCourses(courses);
     });
+}
+
+function reduce(courses) {
+    const totalCredits = courses.reduce((accumulator, course) => {
+        return accumulator += course.credits;
+    }, 0);
+    return totalCredits;
 }
 
 profilePic.addEventListener('click', () => {
@@ -127,6 +149,7 @@ profilePic.addEventListener('click', () => {
     navBar.classList.toggle('js-open-navBar');
 });
 
+displayCreditsInfo(courses);
 renderCourses(courses);
 filterOnClick(courses, allBtn);
 filterOnClick(cseCourses, cseBtn);
