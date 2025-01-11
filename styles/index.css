@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 :root {
     --regular-text: "Nunito", serif;
@@ -66,10 +66,21 @@ header picture img {
     box-shadow: 0 0 5px 0 #fff;
 }
 
-.menu img {
+.menu {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
     position: absolute;
     bottom: calc(100% - 40px);
     left: calc(100% - 40px);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.menu:focus {
+    background-color: var(--color-dark-green);
+}
+
+.menu img {
     border-radius: 10px;
     transition: transform .7s ease;
     touch-action: manipulation;
@@ -82,7 +93,7 @@ header picture img {
 .nav {
     position: absolute;
     top: 100%;
-    left: 0; 
+    left: 0;
     width: 100%;
     transform: scale(0);
     transition: transform .7s ease;
@@ -104,13 +115,18 @@ header picture img {
     -webkit-tap-highlight-color: transparent;
 }
 
+.nav__list_container a:focus {
+    border: none;
+    outline: none;
+}
+
 @media screen and (min-width: 425px) {
     header {
         display: grid;
         grid-template-columns: 1fr 1fr;
 
     }
-    
+
     .menu {
         display: none;
     }
@@ -135,7 +151,7 @@ header picture img {
     }
 }
 
-@media screen and (min-width: 768px) {    
+@media screen and (min-width: 768px) {
     header picture img {
         width: 80px;
         height: auto;
@@ -159,7 +175,8 @@ main {
 }
 
 section {
-    margin-bottom: 1.5em;;
+    margin-bottom: 1.5em;
+    ;
 }
 
 section h2 {
@@ -272,16 +289,21 @@ footer {
 }
 
 header,
-.menu img:active,
-.nav__list_container li:has(a:active),
 .nav__list_container a,
 section h2,
 footer {
     color: var(--color-white);
 }
 
-.menu img:active,
-.nav__list_container li:has(a:active) {
+.menu:active,
+.menu:focus {
+    border: none;
+    outline: none;
+}
+
+.nav__list_container li:has(a:active),
+.nav__list_container li:has(a:focus),
+.menu:active {
     background-color: var(--color-dark-green);
 }
 
