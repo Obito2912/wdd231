@@ -76,7 +76,7 @@ header picture img {
     -webkit-tap-highlight-color: transparent;
 }
 
-.menu:focus {
+.menu img:has(.menu:active) {
     background-color: var(--color-dark-green);
 }
 
