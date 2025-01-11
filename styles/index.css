@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 h1,
@@ -45,6 +45,12 @@ h4 {
     }
 }
 
+@media screen and (min-width: 768px) {
+    body {
+        grid: 200px auto 100px / auto;
+    }
+}
+
 /* ----------------------------------------------------- HEADER ----------------------------------------------------- */
 
 header {
@@ -57,7 +63,7 @@ header h1 {
     margin: auto;
 }
 
-header>img {
+header picture img {
     box-shadow: 0 0 5px 0 #fff;
 }
 
@@ -114,9 +120,11 @@ header>img {
 
     .nav {
         grid-column: 1 / 3;
-        position: static;
+        position: inherit;
         transform: scale(1);
         transition: none;
+        top: initial;
+        left: initial;
     }
 
     .nav__list_container {
@@ -124,8 +132,30 @@ header>img {
         justify-content: space-around;
     }
 
-    header>img {
+    header picture img {
+        display: block;
         margin-inline: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* header {
+        gap: 40px;
+    } */
+    
+    header picture img {
+        width: 80px;
+        height: auto;
+        /* margin: auto 0 auto auto; */
+    }
+
+    header h1 {
+        font-size: 2rem;
+        margin: auto 0;
+    }
+
+    .nav {
+        font-size: 1.5rem;
     }
 }
 
@@ -141,8 +171,9 @@ section {
 }
 
 section h2 {
-    background-color: var(--color-dark-green);
+    background-color: var(--color-black);
     padding: .8em 0;
+    font-size: 1rem;
 }
 
 .section__content {
@@ -151,11 +182,6 @@ section h2 {
 
 .course__work_li {
     margin-left: 1em;
-}
-
-.section__content figure {
-    width: 90%;
-    margin: 0 auto;
 }
 
 .course__buttons {
@@ -189,7 +215,8 @@ section h2 {
 }
 
 .js-course-list .completed {
-    background-color: #5ea63f;
+    background-color: #006807;
+    color: var(--color-white);
 }
 
 .js-course-list .incomplete {
@@ -199,6 +226,17 @@ section h2 {
 @media screen and (min-width: 425px) {
     button {
         cursor: pointer;
+    }
+
+    .section__content picture img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section__content picture img {
+        width: 600px;
     }
 }
 
