@@ -113,6 +113,7 @@ header picture img {
     display: block;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
+    color: var(--color-white);
 }
 
 .nav__list_container a:focus {
@@ -297,7 +298,6 @@ footer {
 }
 
 header,
-.nav__list_container a,
 section h2,
 footer {
     color: var(--color-white);
