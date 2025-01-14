@@ -56,6 +56,7 @@ header {
     display: flex;
     padding: 10px;
     position: relative;
+    background-color: var(--color-black);
 }
 
 header h1 {
@@ -95,12 +96,14 @@ header picture img {
     top: 100%;
     left: 0;
     width: 100%;
-    transform: scale(0);
-    transition: transform .7s ease;
+    display: none;
+    /* transform: scale(0); */
+    /* transition: transform .7s ease; */
 }
 
 .js-open-navBar {
-    transform: scale(1);
+    /* transform: scale(1); */
+    display: block;
 }
 
 .nav__list_container li {
@@ -109,7 +112,6 @@ header picture img {
 }
 
 .nav__list_container a {
-    width: 100%;
     display: block;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
@@ -135,10 +137,11 @@ header picture img {
     .nav {
         grid-column: 1 / 3;
         position: inherit;
-        transform: scale(1);
-        transition: none;
+        /* transform: scale(1); */
+        /* transition: none; */
         top: initial;
         left: initial;
+        display: block;
     }
 
     .nav__list_container {
