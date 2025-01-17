@@ -1,0 +1,28 @@
+{
+    "familyName": "Lugo",
+    "movedInDate": "Nov 20th, 2023",
+    "familySize": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Ovinson",
+            "Gender": "M",
+            "birthdate": "Dec"
+        },
+        {
+            "name": "Cassidy",
+            "Gender": "F",
+            "birthdate": "Feb"
+        },
+        {
+            "name": "Amilah",
+            "Gender": "M",
+            "birthdate": "Jul"
+        },
+        {
+            "name": "Sailor",
+            "Gender": "M",
+            "birthdate": "Sept"
+        }
+    ]
+}
