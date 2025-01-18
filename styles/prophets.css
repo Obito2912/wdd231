@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, 
+footer,
+#cards section {
+    text-align: center;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+    justify-content: center;
+}
+
+#cards section {
+    margin-inline: auto;
+}
