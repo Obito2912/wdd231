@@ -48,6 +48,7 @@ body {
     top: 100%;
     width: 100%;
     display: none;
+    z-index: 555;
 }
 
 .js-open-navBar {
@@ -86,9 +87,10 @@ body {
 
 .hero__button {
     position: absolute;
+    width: 40%;
     padding: .8em 1.2em;
     top: calc(100% - 55px);
-    left: calc(100% - 150px);
+    left: calc(60% - 10px);
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 5px #000;
