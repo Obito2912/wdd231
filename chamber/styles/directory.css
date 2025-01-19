@@ -86,10 +86,9 @@ body {
 
 .hero__button {
     position: absolute;
-    width: 150px;
     padding: .8em 1.2em;
-    top: calc(100% - 53px);
-    left: calc(100% - 155px);
+    top: calc(100% - 55px);
+    left: calc(100% - 150px);
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 5px #000;
