@@ -60,8 +60,13 @@
     </header>
     <main class="main">
         <div class="hero__container">
-            <img src="images/business-img-small.webp" alt="Business Hero Image" width="320" height="136">
-            <button class="hero__button">Keynote Tickets</button>
+            <picture>
+                <source srcset="images/business-img1.webp" media="(min-width: 800px)">
+                <img src="images/business-img-small.webp" alt="Business Hero Image" width="320" height="136">
+            </picture>
+            <button class="hero__button">
+                <a href="#">Keynote Tickets</a>
+            </button>
         </div>
         <div class="main__section_container">
             <h2>Home</h2>
@@ -109,10 +114,12 @@
         </div>
     </main>
     <footer class="footer">
-        <p>ConnectPros Chamber of Commerce</p>
-        <p><span>Address:</span> 1234 Fake Address Ln, Moon UT 80404</p>
-        <p><span>Email:</span> info@connectpros.org</p>
-        <p><span>Phone Number:</span> (333) 555-7755</p>
+        <div class="footer__contact-info">
+            <p>ConnectPros Chamber of Commerce</p>
+            <p><span>Address:</span> 1234 Fake Address Ln, Moon UT 80404</p>
+            <p><span>Email:</span> info@connectpros.org</p>
+            <p><span>Phone Number:</span> (333) 555-7755</p>
+        </div>
         <div class="footer__media_icons">
             <a href="https://www.facebook.com/">
                 <img src="images/facebook-icon.svg" alt="Facebook Icon" width="64" height="64">
@@ -124,8 +131,10 @@
                 <img src="images/tiktok-icon.svg" alt="TikTok Icon" width="64" height="64">
             </a>
         </div>
-        <p><span id="current-year">©</span> ConnectPros Chamber of Commerce</p>
-        <p>Last Modification: <span id="last-modified"></span></p>
+        <div>
+            <p><span id="current-year">©</span> ConnectPros Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
     </footer>
 </body>
 
