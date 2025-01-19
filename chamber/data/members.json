@@ -12,7 +12,7 @@
         "address": "232 N Main St Kaysville, UT 84037",
         "phoneNumber": "801-544-5300",
         "url": "https://bebikes.com/",
-        "image": "https://obito2912.github.io/wdd231/chamber/images/biker-edge-img.webp",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/bikers-edge-img.webp",
         "membership": "Silver"
     },
     {
@@ -52,7 +52,7 @@
         "address": "141 N Main St, Kaysville, UT 84037",
         "phoneNumber": "385-209-2284",
         "url": "https://www.orlandosonmain.com/",
-        "image": "https://obito2912.github.io/wdd231/chamber/images/orlando's-mexican-restaurant-img.webp",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/orlando-mexican-restaurant-img.webp",
         "membership": "gold"
     }
 ]

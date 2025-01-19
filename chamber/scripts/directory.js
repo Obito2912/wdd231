@@ -24,7 +24,7 @@ function displayChamberCards(data) {
         `
         <h3>${object.name}</h3>
         <div>
-            <img src='${object.img}' alt='${object.name} image' width='80' height='80'>
+            <img src='${object.image}' alt='${object.name} image' width='80' height='80'>
             <div>
                 <p>Address: ${object.address}</p>
                 <p>Phone Number: ${object.phoneNumber}</p>
