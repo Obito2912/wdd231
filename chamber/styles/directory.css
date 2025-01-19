@@ -8,7 +8,6 @@ body {
     min-height: 100vh;
     display: grid;
     grid: 70px auto 230px / auto;
-    background-color: #FDF0D5;
 }
 
 .header {
@@ -72,8 +71,17 @@ body {
     display: block;
 }
 
-.hero__container{
+.main {
+    background-color: #FDF0D5;
+}
+
+.hero__container {
     position: relative;
+}
+
+.hero__container img {
+    width: 100%;
+    height: auto;
 }
 
 .hero__button {
