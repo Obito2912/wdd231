@@ -7,21 +7,21 @@
 
     <title>Chamber Website | Ovinson Lugo</title>
 
-    <meta name="description" content="Want to connect, support, or grow? Come visit our most popular chambers in the Kaysville, Utah area.">
+    <meta name="description"
+        content="Want to connect, support, or grow? Come visit our most popular chambers in the Kaysville, Utah area.">
     <meta name="author" content="Ovinson Lugo">
 
     <meta property="og:title" content="Chamber Connect | Ovinson Lugo">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jacobbarlow.com/wp-content/uploads/2022/05/2022-04-09-16.53.16.jpg">
-    <!-- <meta property="og:image" content="https://obito2912.github.io/wdd231/chamber/images/chamber-screenshot"> -->
+    <meta property="og:image" content="https://obito2912.github.io/wdd231/chamber/images/chamber-screenshot">
     <meta property="og:url" content="https://obito2912.github.io/wdd231/chamber/directory">
 
     <meta name="twitter:title" content="Chamber Connect | Ovinson Lugo">
-    <meta name="twitter:description" content="Want to connect, support, or grow? Come visit our most popular chambers in the Kaysville, Utah area.">
-    <meta name="twitter:image" content="https://jacobbarlow.com/wp-content/uploads/2022/05/2022-04-09-16.53.16.jpg">
-    <!-- <meta name="twitter:image" content="https://obito2912.github.io/wdd231/chamber/images/chamber-screenshot"> -->
+    <meta name="twitter:description"
+        content="Want to connect, support, or grow? Come visit our most popular chambers in the Kaysville, Utah area.">
+    <meta name="twitter:image" content="https://obito2912.github.io/wdd231/chamber/images/chamber-screenshot">
     <meta name="twitter:card" content="summary">
-    
+
     <link rel="icon" href="images/favicon32.png">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
@@ -32,12 +32,52 @@
 </head>
 
 <body>
-    <header>
-        <h1>Hey how are you doing guys?</h1>
+    <header class="header">
+        <img class="header__logo" src="images/business-logo.webp" alt="Business Logo" width="40" height="40">
+            <div class="header__text">
+                <h1>ConnectPros</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        <a class="header__menu_link" href="#">
+            <img class="header__menu_icon" src="images/menu-icon.svg" alt="Menu Icon" width="32" height="32">
+        </a>
+        <nav class="navBar">
+            <ul class="navBar__list_container">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Directory</a>
+                </li>
+                <li>
+                    <a href="#">Join</a>
+                </li>
+                <li>
+                    <a href="#">Discover</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
     </main>
-    <footer>
+    <footer class="footer">
+        <p>ConnectPros Chamber of Commerce</p>
+        <p><span>Address:</span> 1234 Fake Address Ln, Moon UT 80404</p>
+        <p><span>Email:</span> info@connectpros.org</p>
+        <p><span>Phone Number:</span> (333) 555-7755</p>
+        <div class="footer__media_icons">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook-icon.svg" alt="Facebook Icon" width="64" height="64">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram-icon.svg" alt="Instagram Icon" width="64" height="64">
+            </a>
+            <a href="https://www.tiktok.com/">
+                <img src="images/tiktok-icon.svg" alt="TikTok Icon" width="64" height="64">
+            </a>
+        </div>
+        <p><span id="current-year">©</span> ConnectPros Chamber of Commerce</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
     </footer>
 </body>
 

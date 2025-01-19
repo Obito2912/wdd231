@@ -1,0 +1,58 @@
+[
+    {
+        "name": "HairMax Salon and Supply",
+        "address": "157 W 320 N Kaysville, UT 84037",
+        "phoneNumber": "801-546-4716",
+        "url": "https://www.hairmax-ss.com/",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/hairmax-img",
+        "membership": "member"
+    },
+    {
+        "name": "Bikers Edge",
+        "address": "232 N Main St Kaysville, UT 84037",
+        "phoneNumber": "801-544-5300",
+        "url": "https://bebikes.com/",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/biker-edge-img",
+        "membership": "Silver"
+    },
+    {
+        "name": "Jack Harris Painting & Auto Body",
+        "address": "445 Market St Kaysville, UT 84037",
+        "phoneNumber": "801-544-3653",
+        "url": "https://jackharrisautobody.com/",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/jack-harris-img",
+        "membership": "member"
+    },
+    {
+        "name": "Timber Cuts Tree Service Kaysville",
+        "address": "1841 Carriage Ln, Kaysville, UT 84037",
+        "phoneNumber": "801-335-9650",
+        "url": "https://timbercutsutah.com/",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/timber-cuts-tree-service-img",
+        "membership": "Silver"
+    },
+    {
+        "name": "Hatchet Jaxe Axe Throwing",
+        "address": "443 Deseret Dr suite b, Kaysville, UT 84037",
+        "phoneNumber": "801-719-6012",
+        "url": "https://hatchetjaxeaxethrowing.com/",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/hatchet-jaxe-axe-throwing-img",
+        "membership": "Silver"
+    },
+    {
+        "name": "Elevated Fit Life",
+        "address": "178 Brady Ln, Kaysville, UT 84037",
+        "phoneNumber": "385-526-4836",
+        "url": "https://elevatedfitlife.com/",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/elevated-fit-life-img",
+        "membership": "gold"
+    },
+    {
+        "name": "Orlando's Mexican Restaurant",
+        "address": "141 N Main St, Kaysville, UT 84037",
+        "phoneNumber": "385-209-2284",
+        "url": "https://www.orlandosonmain.com/",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/orlando's-mexican-restaurant-img",
+        "membership": "gold"
+    }
+]
