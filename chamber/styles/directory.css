@@ -164,8 +164,50 @@ body {
     font-weight: bold;
 }
 
-.chamber__card {
-    background-color: #276e7c;
+.grid-list__btn_container div {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.grid-list__btn_container div a {
+    background-color: #003049;
+    padding: .3em;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.grid-list__btn_container div a:active {
+    background-color: #f6faf6;
+}
+
+.grid-list__btn_container div a img {
+    width: 40px;
+    height: 40px;
+}
+
+.chamber__card h3 {
+    background-color: inherit;
+}
+
+.chamber__card>div {
+    display: flex;
+    gap: 10px;
+    color: #f6faf6;
+}
+
+.chamber__card_text p {
+    margin-bottom: .3em;
+}
+
+.chamber__card_text p:last-child {
+    margin-bottom: 0;
+}
+
+.chamber__card span {
+    font-weight: bold;
 }
 
 .footer {

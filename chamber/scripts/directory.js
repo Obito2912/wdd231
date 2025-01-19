@@ -4,6 +4,8 @@ const year = document.querySelector('#current-year');
 const lastModified = document.querySelector('#last-modified');
 const mainSectionContainer = document.querySelector('.main__section_container');
 const chambersLink = 'https://obito2912.github.io/wdd231/chamber/data/members.json';
+const gridBtn = document.querySelector('.grid__btn');
+const listBtn = document.querySelector('list__btn');
 const date = new Date;
 
 year.textContent += date.getFullYear();
@@ -25,11 +27,11 @@ function displayChamberCards(data) {
         <h3>${object.name}</h3>
         <div>
             <img src='${object.image}' alt='${object.name} image' width='80' height='80'>
-            <div>
-                <p>Address: ${object.address}</p>
-                <p>Phone Number: ${object.phoneNumber}</p>
-                <p>URL: ${object.url}</p>
-                <p>Membership: ${object.membership}</p>
+            <div class='chamber__card_text'>
+                <p><span>Address: </span>${object.address}</p>
+                <p><span>Phone Number: </span>${object.phoneNumber}</p>
+                <p><span>URL: </span>${object.url}</p>
+                <p><span>Membership: </span>${object.membership}</p>
             </div>
         </div>
         `;
