@@ -77,7 +77,7 @@ body {
     background-color: #003049;
 } */
 
-.main__container h2 {
+.main__section_container h2 {
     color: #C8C8FF;
 }
 
@@ -102,13 +102,13 @@ body {
     color: #C8C8FF;
 }
 
-.main__container {
+.main__section_container {
     padding: 1em;
     display: grid;
     gap: 10px;
 }
 
-.main__container section {
+.main__section_container section {
     background-color: #276e7c;
     padding: 1em;
     border-radius: 5px;
@@ -126,11 +126,11 @@ body {
     color: #f6faf6;
 }
 
-.main__container section:first-of-type {
+.main__section_container section:first-of-type {
     min-height: 200px;
 }
 
-.main__container h3 {
+.main__section_container h3 {
     background-color: #003049;
     padding: .3em 0;
     color: #C8C8FF;
@@ -162,6 +162,10 @@ body {
 .main__container_current-weather span,
 .main__container_weather-forecast span {
     font-weight: bold;
+}
+
+.chamber__card {
+    background-color: #276e7c;
 }
 
 .footer {

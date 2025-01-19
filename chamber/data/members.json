@@ -4,7 +4,7 @@
         "address": "157 W 320 N Kaysville, UT 84037",
         "phoneNumber": "801-546-4716",
         "url": "https://www.hairmax-ss.com/",
-        "image": "https://obito2912.github.io/wdd231/chamber/images/hairmax-img",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/hairmax-img.webp",
         "membership": "member"
     },
     {
@@ -12,7 +12,7 @@
         "address": "232 N Main St Kaysville, UT 84037",
         "phoneNumber": "801-544-5300",
         "url": "https://bebikes.com/",
-        "image": "https://obito2912.github.io/wdd231/chamber/images/biker-edge-img",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/biker-edge-img.webp",
         "membership": "Silver"
     },
     {
@@ -20,7 +20,7 @@
         "address": "445 Market St Kaysville, UT 84037",
         "phoneNumber": "801-544-3653",
         "url": "https://jackharrisautobody.com/",
-        "image": "https://obito2912.github.io/wdd231/chamber/images/jack-harris-img",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/jack-harris-img.webp",
         "membership": "member"
     },
     {
@@ -28,7 +28,7 @@
         "address": "1841 Carriage Ln, Kaysville, UT 84037",
         "phoneNumber": "801-335-9650",
         "url": "https://timbercutsutah.com/",
-        "image": "https://obito2912.github.io/wdd231/chamber/images/timber-cuts-tree-service-img",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/timber-cuts-tree-service-img.webp",
         "membership": "Silver"
     },
     {
@@ -36,7 +36,7 @@
         "address": "443 Deseret Dr suite b, Kaysville, UT 84037",
         "phoneNumber": "801-719-6012",
         "url": "https://hatchetjaxeaxethrowing.com/",
-        "image": "https://obito2912.github.io/wdd231/chamber/images/hatchet-jaxe-axe-throwing-img",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/hatchet-jaxe-axe-throwing-img.webp",
         "membership": "Silver"
     },
     {
@@ -44,7 +44,7 @@
         "address": "178 Brady Ln, Kaysville, UT 84037",
         "phoneNumber": "385-526-4836",
         "url": "https://elevatedfitlife.com/",
-        "image": "https://obito2912.github.io/wdd231/chamber/images/elevated-fit-life-img",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/elevated-fit-life-img.webp",
         "membership": "gold"
     },
     {
@@ -52,7 +52,7 @@
         "address": "141 N Main St, Kaysville, UT 84037",
         "phoneNumber": "385-209-2284",
         "url": "https://www.orlandosonmain.com/",
-        "image": "https://obito2912.github.io/wdd231/chamber/images/orlando's-mexican-restaurant-img",
+        "image": "https://obito2912.github.io/wdd231/chamber/images/orlando's-mexican-restaurant-img.webp",
         "membership": "gold"
     }
 ]
