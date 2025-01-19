@@ -5,7 +5,7 @@ const lastModified = document.querySelector('#last-modified');
 const date = new Date;
 
 year.textContent += date.getFullYear();
-lastModified.textContent += date.lastModified();
+lastModified.textContent = document.lastModified;
 
 
 menuBtn.addEventListener('click', () => {
