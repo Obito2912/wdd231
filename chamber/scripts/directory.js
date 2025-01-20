@@ -50,14 +50,14 @@ menuBtn.addEventListener("click", () => {
 function makeItGrid(container) {
   gridBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    container.classList.add("js-chamber-card");
+    container.classList.remove("js-chamber-card");
   });
 }
 
 function makeItList(container) {
   listBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    container.classList.remove("js-chamber-card");
+    container.classList.add("js-chamber-card");
   });
 }
 
