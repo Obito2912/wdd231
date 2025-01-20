@@ -233,6 +233,8 @@ body {
 
 .grid-list__btn_container {
     display: none;
+    background-color: #276e7c;
+    padding: 1em 0;
 }
 
 .grid-list__btn_container div {
