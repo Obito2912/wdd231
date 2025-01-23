@@ -1,16 +1,12 @@
-const navEl = document.querySelector(".navBar");
-const menuBtn = document.querySelector(".header__menu_icon");
-const year = document.querySelector("#current-year");
-const lastModified = document.querySelector("#last-modified");
+
 const mainSectionContainer = document.querySelector(".main__section_container");
 const chambersLink =
   "https://obito2912.github.io/wdd231/chamber/data/members.json";
 const gridBtn = document.querySelector(".grid__btn");
 const listBtn = document.querySelector(".list__btn");
-const date = new Date();
 
-year.textContent += date.getFullYear();
-lastModified.textContent = document.lastModified;
+
+
 
 async function getChambersData() {
   const response = await fetch(chambersLink);
@@ -43,9 +39,6 @@ function displayChamberCards(data) {
   makeItList(chamberCardSectionContainer);
 }
 
-menuBtn.addEventListener("click", () => {
-  navEl.classList.toggle("js-open-navBar");
-});
 
 function makeItGrid(container) {
   gridBtn.addEventListener("click", (e) => {
