@@ -1,12 +1,7 @@
-
 const mainSectionContainer = document.querySelector(".main__section_container");
-const chambersLink =
-  "https://obito2912.github.io/wdd231/chamber/data/members.json";
+const chambersLink = "https://obito2912.github.io/wdd231/chamber/data/members.json";
 const gridBtn = document.querySelector(".grid__btn");
 const listBtn = document.querySelector(".list__btn");
-
-
-
 
 async function getChambersData() {
   const response = await fetch(chambersLink);
@@ -38,7 +33,6 @@ function displayChamberCards(data) {
   makeItGrid(chamberCardSectionContainer);
   makeItList(chamberCardSectionContainer);
 }
-
 
 function makeItGrid(container) {
   gridBtn.addEventListener("click", (e) => {
