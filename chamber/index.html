@@ -28,17 +28,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <script defer src="scripts/header.js"></script>
+    <script defer src="scripts/header-footer.js"></script>
     <script defer src="scripts/index.js"></script>
 </head>
 
 <body>
     <header class="header">
         <img class="header__logo" src="images/business-logo.webp" alt="Business Logo" width="40" height="40">
-            <div class="header__text">
-                <h1>ConnectPros</h1>
-                <p>Chamber of Commerce</p>
-            </div>
+        <div class="header__text">
+            <h1>ConnectPros</h1>
+            <p>Chamber of Commerce</p>
+        </div>
         <a class="header__menu_link" href="#">
             <img class="header__menu_icon" src="images/menu-icon.svg" alt="Menu Icon" width="32" height="32">
         </a>
@@ -68,20 +68,22 @@
             <section class="events">
                 <h3>Events</h3>
                 <div>
-                    <p>No Events at this Time</p>
+                    <p><strong>No Events at this Time</strong></p>
                 </div>
             </section>
             <section class="current-weather">
                 <h3>Current Weather</h3>
-                <img id="weather-icon" src="" alt="">
-                <p class="temp"><strong>Temperature: </strong></p>
-                <p class="desc"><strong>Description: </strong></p>
+                <div>
+                    <img id="weather-icon" src="" alt="">
+                    <p class="temp"><strong>Temperature: </strong></p>
+                    <p class="desc"><strong>Description: </strong></p>
+                </div>
             </section>
-            <section class="weather-forecast">
+            <section class="forecast">
                 <h3>Weather Forecast</h3>
-                <p></p>
-                <p></p>
-                <p></p>
+                <div>
+
+                </div>
             </section>
         </section>
     </main>
