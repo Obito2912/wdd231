@@ -7,15 +7,14 @@ async function apiFetch() {
     try {
         const response = await fetch(url);
         if (response.ok) {
-            data = await response.json();
+            const data = await response.json();
+            displayResults(data);
         } else {
             throw Error(await response.text());
         }
     } catch(error) {
         console.log(error);
     }
-    console.log(data);
-    displayResults(data);
 }
 
 function displayResults(data) {
