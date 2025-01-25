@@ -1,3 +1,5 @@
+/* =============================================================== Reset and Body =============================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +18,8 @@ body {
         grid: 150px auto 170px / auto;
     }
 }
+
+/* =============================================================== HEADER =============================================================== */
 
 .header {
     background-color: #003049;
@@ -132,36 +136,12 @@ body {
     }
 }
 
+/* =============================================================== MAIN =============================================================== */
+
 .main__section_container h2 {
     color: #C8C8FF;
-}
-
-.hero__container {
-    position: relative;
-}
-
-.hero__container img {
-    width: 100%;
-    height: auto;
-}
-
-.hero__button {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #000;
-    background-color: #003049;
-    -webkit-tap-highlight-color: transparent;
-    padding: .5em 1.5em;
-    display: block;
-    color: #C8C8FF;
-    text-decoration: none;
-}
-
-.hero__button:active {
-    color: #FBAA00;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .main__section_container {
@@ -170,31 +150,18 @@ body {
     gap: 10px;
 }
 
-.events-weather__info {
-    display: grid;
-    gap: 10px;
-}
-
-.main__container_events {
-    min-height: 200px;
+.grid-list__btn_container {
+    display: none;
+    background-color: #276e7c;
+    padding: .5em;
+    margin-inline: auto;
+    border-radius: 5px;
 }
 
 .main__section_container section {
     background-color: #276e7c;
     padding: 1em;
     border-radius: 5px;
-}
-
-.main__container_events div {
-    width: 100%;
-    height: calc(100% - 32.75px);
-    place-content: center;
-}
-
-.main__container_events p {
-    font-size: 1.5rem;
-    text-align: center;
-    color: #f6faf6;
 }
 
 .main__section_container h3 {
@@ -206,70 +173,20 @@ body {
     margin-bottom: .3em;
 }
 
-.current-weather__grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-}
-
-.main__container_current-weather,
-.main__container_weather-forecast {
-    color: #f6faf6;
-}
-
-.main__container_current-weather div p,
-.main__container_weather-forecast div p {
-    margin-bottom: .3em;
-}
-
-.main__container_current-weather div p:last-child,
-.main__container_weather-forecast div p:last-child {
-    margin-bottom: 0;
-}
-
-.main__container_current-weather span,
-.main__container_weather-forecast span {
-    font-weight: bold;
-}
-
-.grid-list__btn_container {
-    display: none;
-    background-color: #276e7c;
-    padding: 1em 0;
-}
-
-.grid-list__btn_container div {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-}
-
-.grid-list__btn_container div a {
-    background-color: #003049;
-    padding: .3em;
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
-}
-
-.grid-list__btn_container div a:active {
-    background-color: #f6faf6;
-}
-
-.grid-list__btn_container div a img {
-    width: 40px;
-    height: 40px;
-}
-
 .chamber__card h3 {
     background-color: inherit;
 }
 
 .chamber__card>div {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     gap: 10px;
     color: #f6faf6;
+}
+
+.chamber__card>div img {
+    margin-inline: auto;
 }
 
 .chamber__card_text p {
@@ -296,28 +213,22 @@ body {
 
 @media screen and (min-width: 800px) {
 
-    .hero__button {
-        padding: 1em 2em;
-        cursor: pointer;
-    }
-
     .main__section_container {
         width: 80%;
         margin-inline: auto;
     }
 
-    .hero__button:hover {
-        color: #FBAA00;
+    .chamber__card>div {
+        flex-direction: row;
+        text-align: start;
+    }
+
+    .chamber__card>div img {
+        margin: 0;
     }
 
     .chamber__card_text a:hover {
         color: #FBAA00;
-    }
-
-    .events-weather__info {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        gap: 10px;
     }
 
     .chamber-card__container {
@@ -327,7 +238,39 @@ body {
     .grid-list__btn_container {
         display: block;
     }
+
+    .grid-list__btn_container div {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .grid-list__btn_container div a {
+        background-color: #003049;
+        padding: .3em;
+        border-radius: 5px;
+        width: 50px;
+        height: 50px;
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+    }
+
+    .grid-list__btn_container div a:hover {
+        background-color: #276e7c;
+    }
+
+    .grid-list__btn_container div a:active {
+        background-color: #f6faf6;
+    }
+
+    .grid-list__btn_container div a img {
+        width: 40px;
+        height: 40px;
+    }
+
 }
+
+/* =============================================================== FOOTER =============================================================== */
 
 .footer {
     background-color: #003049;
@@ -400,13 +343,13 @@ body {
     }
 
     .footer__media_icons a {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 
     .footer__media_icons a img {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -511,7 +454,7 @@ body {
     }
 
     .home-main h2 {
-        margin: 1em 0;
+        margin: 1em auto;
         padding: .3em 0;
     }
 
@@ -521,6 +464,30 @@ body {
 
     .event-weather__container {
         grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .cards__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 80%;
+        margin-inline: auto;
+        min-height: 200px;
+        margin-top: 15px;
+    }
+    
+    .cards__container section {
+        background-color: #276e7c;
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    .cards__container section h3 {
+        background-color: #003049;
+        color: #C8C8FF;
+        text-align: center;
+        padding: .3em;
+        border-radius: 5px;
     }
 
 }

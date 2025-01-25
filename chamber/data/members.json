@@ -5,7 +5,7 @@
         "phoneNumber": "801-546-4716",
         "url": "https://www.hairmax-ss.com/",
         "image": "https://obito2912.github.io/wdd231/chamber/images/hairmax-img.webp",
-        "membership": "member"
+        "membership": "Member"
     },
     {
         "name": "Bikers Edge",
@@ -21,7 +21,7 @@
         "phoneNumber": "801-544-3653",
         "url": "https://jackharrisautobody.com/",
         "image": "https://obito2912.github.io/wdd231/chamber/images/jack-harris-img.webp",
-        "membership": "member"
+        "membership": "Member"
     },
     {
         "name": "Timber Cuts Tree Service Kaysville",
@@ -45,7 +45,7 @@
         "phoneNumber": "385-526-4836",
         "url": "https://elevatedfitlife.com/",
         "image": "https://obito2912.github.io/wdd231/chamber/images/elevated-fit-life-img.webp",
-        "membership": "gold"
+        "membership": "Gold"
     },
     {
         "name": "Orlando's Mexican Restaurant",
@@ -53,6 +53,6 @@
         "phoneNumber": "385-209-2284",
         "url": "https://www.orlandosonmain.com/",
         "image": "https://obito2912.github.io/wdd231/chamber/images/orlando-mexican-restaurant-img.webp",
-        "membership": "gold"
+        "membership": "Gold"
     }
 ]
