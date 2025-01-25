@@ -84,27 +84,39 @@ function getDynamicWeekDays() {
   return dynamicDays;
 }
 
+function filterMemberObjects(data) {
+    const filteredChamber = data.filter(
+        (object) => object.membership === "Silver" || object.membership === "Gold"
+      );
+      const shuffledChamber = shuffleArray(filteredChamber, 3);
+      const randomSelection = shuffledChamber.slice(0, 3);
+      return randomSelection;
+}
+
 function displaySpotlightCards(data) {
-  const filteredChamber = data.filter(
-    (object) => object.membership === "Silver" || object.membership === "Gold"
-  );
-  const shuffledChamber = shuffleArray(filteredChamber, 3);
-  const randomSelection = shuffledChamber.slice(0, 3);
+  const randomSelection = filterMemberObjects(data);
   const cardsContainer = document.createElement("div");
   cardsContainer.setAttribute('class', 'cards__container');
 
   randomSelection.forEach((object) => {
-    const section = document.createElement("section");
-    const heading = document.createElement("h3");
-    heading.textContent = `${object.name}`;
-
-    section.append(heading);
-    cardsContainer.append(section);
+    cardsContainer.innerHTML += `
+    <section class='card'>
+        <h3>${object.name}</h3>
+        <div>
+            <div>
+            <img src='${object.image}' alt='${object.name} image' width='80' height='80'>
+            <div class='card__content'>
+                <p><strong>Address: </strong>${object.address}</p>
+                <p><strong>Phone Number: </strong>${object.phoneNumber}</p>
+                <p><strong>URL: </strong><a href='${object.url}'>${object.url}</a></p>
+                <p><strong>Membership: </strong>${object.membership}</p>
+            </div>
+        </div>
+        </div
+    </section>`
   });
   main.append(cardsContainer);
 }
-
-// MAKE SURE TO KNOW HOW THIS IS WORKING
 
 function shuffleArray(array, count) {
   const shuffled = array.sort(() => 0.5 - Math.random());
