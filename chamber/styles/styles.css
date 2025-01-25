@@ -114,6 +114,8 @@ body {
         display: flex;
         align-self: end;
         position: static;
+        top: auto;
+        left: auto;
         width: 70%;
         margin-left: auto;
     }
@@ -524,6 +526,6 @@ body {
 
     .card__content a:hover {
         color: #FBAA00;
-    }    
+    }
 
 }
