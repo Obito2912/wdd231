@@ -73,6 +73,7 @@ body {
     text-align: center;
     background-color: #003049;
     border-bottom: 1px solid #FBAA00;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .navBar__list_container li a {
@@ -80,6 +81,10 @@ body {
     color: #fff;
     padding: .3em 0;
     display: block;
+}
+
+.navBar__list_container li a:active {
+    color: #FBAA00;
 }
 
 @media screen and (min-width: 800px) {
@@ -393,13 +398,12 @@ body {
 }
 
 .home-main h2 {
-    width: 80%;
+    width: 100%;
     text-align: center;
-    margin: .5em 0;
     background-color: #276e7c;
     color: #fff;
     padding: .1em 0;
-    margin-inline: auto;
+    margin: 10px auto 0;
 }
 
 .event-weather__container {
@@ -436,6 +440,10 @@ body {
 
 .forecast div p {
     margin-bottom: 5px;
+}
+
+.home-main .top-partners__heading {
+    width: 80%;
 }
 
 .cards__container {
@@ -495,6 +503,7 @@ body {
     }
 
     .home-main h2 {
+        grid-column: 1 / 4;
         margin: 1em auto;
         padding: .3em 0;
     }
