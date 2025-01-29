@@ -244,6 +244,35 @@ section h2 {
     background-color: #cacaca;
 }
 
+.dialog {
+    padding: 1em;
+    background-color: #000;
+    border: 1px solid #7eb400;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    color: #adadad;
+}
+
+.dialog strong {
+    color: #e8e8e8;
+}
+
+.dialog button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: .5em 1.5em;
+    border: 1px solid #8b8b8b;
+    border-radius: 5px;
+    background-color: #adadad;
+}
+
+.dialog::backdrop {
+    background-color: rgba(0, 0, 0, .5);
+}
+
 @media screen and (min-width: 425px) {
     button {
         cursor: pointer;
@@ -262,6 +291,10 @@ section h2 {
 @media screen and (min-width: 768px) {
     .section__content picture img {
         width: 600px;
+    }
+
+    .js-course-list ul li {
+        cursor: pointer;
     }
 }
 
