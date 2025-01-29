@@ -37,7 +37,7 @@ body {
     color: #C8C8FF;
 }
 
-.header__text h1 {
+.header__text div {
     font-size: 1.5rem;
 }
 
@@ -96,6 +96,7 @@ body {
 
     .header__text {
         justify-self: start;
+        font-size: 1.5rem;
     }
 
     .header>img {
@@ -103,12 +104,8 @@ body {
         height: 80px;
     }
 
-    .header__text h1 {
+    .header__text div {
         font-size: 3rem;
-    }
-
-    .header__text {
-        font-size: 1.5rem;
     }
 
     .header__menu_link {
@@ -144,7 +141,11 @@ body {
 
 /* =============================================================== MAIN =============================================================== */
 
-.main__section_container h2 {
+.main {
+    background-color: #276c7361;
+}
+
+.main__section_container h1 {
     color: #C8C8FF;
     text-align: center;
     font-size: 2rem;
@@ -397,6 +398,7 @@ body {
     color: #FBAA00;
 }
 
+.home-main h1,
 .home-main h2 {
     width: 100%;
     text-align: center;
@@ -486,6 +488,15 @@ body {
     margin: 10px auto;
 }
 
+/* .card img {
+    float: left;
+    margin-right: 5px;
+}
+
+.card p:first-child {
+    margin-top: 10px;
+} */
+
 @media screen and (min-width: 800px) {
 
     .hero {
@@ -502,7 +513,7 @@ body {
         color: #FBAA00;
     }
 
-    .home-main h2 {
+    .home-main h1 {
         grid-column: 1 / 4;
         margin: 1em auto;
         padding: .3em 0;
