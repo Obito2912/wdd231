@@ -1,0 +1,14 @@
+Project Subject:
+I'm not very good at thinking of a whole new project in such a short time.
+I think I will create an website about anime. Nothing crazy but so far that's what
+I got. Maybe I will change it later. 
+
+Project Description:
+I saw that there are a lot of free anime APIs where I can retrieve information
+from so I will create like a blog with the later news about the best anime shows
+in these last few months. 
+
+Project Reason and Purpose:
+The reason is just because I want to practice more working with APIs and I really
+enjoy watching anime. There are many people who also enjoy anime so this website
+will serve the purpose of getting the latest news about the anime they are following.
