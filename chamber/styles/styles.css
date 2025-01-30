@@ -29,6 +29,7 @@ body {
     grid-template-columns: 1fr 4fr 1fr;
     justify-items: center;
     align-items: center;
+    border-bottom: 1px solid #f6faf6;
 }
 
 .header__text {
@@ -565,18 +566,29 @@ body {
     margin-top: 15px;
     text-align: center;
     color: #C8C8FF;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .form {
-    width: 90%;
-    max-width: 600px;
+    width: 95%;
+    max-width: 500px;
     margin: 10px auto 20px;
     border: 1px solid #C8C8FF;
     border-radius: 5px;
-    padding: 1em;
+    padding: 1.2em;
     background-color: #276c7361;
     color: #C8C8FF;
+    display: grid;
+    gap: 15px;
+}
+
+.form fieldset {
+    border-radius: 5px;
+}
+
+.form legend {
+    color: #d0f05c;
+    font-size: 1.5rem;
 }
 
 .form label {
@@ -584,22 +596,44 @@ body {
     display: block;
 }
 
-.form input {
+.form fieldset:nth-child(2) label:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+.form input,
+.form textarea {
     display: block;
     height: 3em;
     width: 100%;
+    resize: vertical;
     padding: .5em;
+    border: none;
+    border-radius: 5px;
 }
 
-.form input:focus {
+.form textarea {
+    min-height: 4em;
+}
+
+.form input:focus,
+.form textarea:focus {
     outline: 2px solid #a86262;
 }
 
 .form input[type=submit] {
     font-weight: bold;
     font-size: 1.2rem;
-    color: darkblue;
+    color: #003049;
     cursor: pointer;
-    margin-top: 30px;
     height: 3em;
+}
+
+.form input[type=submit]:active {
+    color: #FBAA00;
+}
+
+@media screen and (min-width: 800px) {
+    .form input[type=submit]:hover {
+        color: #a86262;
+    }
 }
