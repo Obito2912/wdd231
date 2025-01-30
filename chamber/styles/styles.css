@@ -557,5 +557,49 @@ body {
     .card__content a:hover {
         color: #FBAA00;
     }
+}
 
+/* =======================================================================  JOIN PAGE ======================================================================= */
+
+.join__main h1 {
+    margin-top: 15px;
+    text-align: center;
+    color: #C8C8FF;
+    font-size: 2rem;
+}
+
+.form {
+    width: 90%;
+    max-width: 600px;
+    margin: 10px auto 20px;
+    border: 1px solid #C8C8FF;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: #276c7361;
+    color: #C8C8FF;
+}
+
+.form label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form input {
+    display: block;
+    height: 3em;
+    width: 100%;
+    padding: .5em;
+}
+
+.form input:focus {
+    outline: 2px solid #a86262;
+}
+
+.form input[type=submit] {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: darkblue;
+    cursor: pointer;
+    margin-top: 30px;
+    height: 3em;
 }

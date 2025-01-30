@@ -58,8 +58,19 @@
             </ul>
         </nav>
     </header>
-    <main>
-
+    <main class="join__main">
+        <h1>Join Our Chambers Community</h1>
+        <form method="get" action="thankyou.html" class="form">
+                <label>First Name<input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name<input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                
+                <label>Cell Phone<input type="tel" name="phone" autocomplete="tel" placeholder="123-456-7891" title="Your Phone Number With Dashes"></label>
+                <label>Email<input type="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Your Email"></label>
+        
+                <label>Organizational Title<input type="text" name="organization title" autocomplete="organization-title" pattern="[A-Za-z/- ]{7,}"></label>
+                <label>Business/Organization's Name<input type="text" name="organization" required autocomplete="organization"></label>
+                <input type="submit" value="Join Community">
+            </form>
     </main>
     <footer class="footer">
         <div class="footer__contact-info">
