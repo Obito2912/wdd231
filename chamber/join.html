@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Join Page | Ovinson Lugo</title>
-    
-    <meta name="description" content="This page allows you to subscribe to our newsletter which has the latest updates about our chambers.">
+
+    <meta name="description"
+        content="This page allows you to subscribe to our newsletter which has the latest updates about our chambers.">
     <meta name="author" content="Ovinson Lugo">
-    
+
     <meta property="og:title" content="Chamber Connect | Ovinson Lugo">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://obito2912.github.io/wdd231/chamber/images/chamber-screenshot">
@@ -20,7 +21,7 @@
         content="Want to connect, support, or grow? Come visit our most popular chambers in the Kaysville, Utah area.">
     <meta name="twitter:image" content="https://obito2912.github.io/wdd231/chamber/images/chamber-screenshot">
     <meta name="twitter:card" content="summary">
-    
+
     <link rel="icon" href="images/favicon32.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -60,25 +61,65 @@
     </header>
     <main class="join__main">
         <h1>Join Our Chambers Community</h1>
-        <form method="get" action="thankyou.html" class="form">
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <label>First Name<input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-                    <label>Last Name<input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                    
-                    <label>Cell Phone<input type="tel" name="phone" autocomplete="tel" placeholder="123-456-7891" title="Your Phone Number With Dashes"></label>
-                    <label>Email<input type="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Your Email"></label>
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Business Information</legend>
-                    <label>Organizational Title<input type="text" name="organization title" autocomplete="organization-title" pattern="[A-Za-z/- ]{7,}"></label>
-                    <label>Business / Organization's Name<input type="text" name="organization" required autocomplete="organization"></label>
-                    <label>Business / Organization's Description<textarea name="Organization Description" title="Describe Your Organization"></textarea></label>
-                    <input type="hidden" name="timestamp" id="timestamp">
-                </fieldset>
-                <input type="submit" value="Join Community">
-            </form>
+        <div class="form-dialog__container">
+            <section class="section1">
+                <form method="get" action="thankyou.html" class="form">
+                    <h2>Membership Application Form</h2>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label>First Name<input type="text" name="first" required autocomplete="given-name"
+                                title="Your First Name"></label>
+                        <label>Last Name<input type="text" name="last" required autocomplete="family-name"
+                                title="Your Last Name"></label>
+                        <label>Cell Phone<input type="tel" name="phone" autocomplete="tel" placeholder="123-456-7891"
+                                title="Your Phone Number With Dashes"></label>
+                        <label>Email<input type="email" name="email" required autocomplete="email"
+                                placeholder="example@email.com" title="Your Email"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        <label>Organizational Title<input type="text" name="organization title"
+                                autocomplete="organization-title" pattern="[A-Za-z/- ]{7,}"></label>
+                        <label>Business / Organization's Name<input type="text" name="organization" required
+                                autocomplete="organization"></label>
+                        <label for="membership">Membership Level</label>
+                        <select id="membership" name="membership">
+                            <option value="" disabled selected>-- Select a membership level --</option>
+                            <option value="np">NP Membership is for non profit organizations and there is no fee</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                        <label>Business / Organization's Description<textarea name="Organization Description"
+                                title="Describe Your Organization"></textarea></label>
+                        <input type="hidden" name="timestamp" id="timestamp">
+                    </fieldset>
+                    <input type="submit" value="Join Community">
+                </form>
+            </section>
+
+            <section class="section2">
+                <h2>Membership Levels</h2>
+                <div>
+                    <p>Non Profit Membership Level</p>
+                    <button>Learn More</button>
+                </div>
+                <div>
+                    <p>Bronze Membership Level</p>
+                    <button>Learn More</button>
+                </div>
+                <div>
+                    <p>Silver Membership Level</p>
+                    <button>Learn More</button>
+                </div>
+                <div>
+                    <p>Gold Membership Level</p>
+                    <button>Learn More</button>
+                </div>
+            </section>
+
+            <dialog class="dialog"></dialog>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__contact-info">
