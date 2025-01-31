@@ -11,19 +11,66 @@
     <meta name="author" content="Ovinson Lugo">
     
     <link rel="icon" href="images/favicon32.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
+    <script defer src="scripts/header-footer.js"></script>
     <script defer src="scripts/thankyou.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <img class="header__logo" src="images/business-logo.webp" alt="Business Logo" width="40" height="40">
+        <div class="header__text">
+            <div>ConnectPros</div>
+            <p>Chamber of Commerce</p>
+        </div>
+        <a class="header__menu_link" href="#">
+            <img class="header__menu_icon" src="images/menu-icon.svg" alt="Menu Icon" width="32" height="32">
+        </a>
+        <nav class="navBar">
+            <ul class="navBar__list_container">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="directory.html">Directory</a>
+                </li>
+                <li>
+                    <a href="join.html">Join</a>
+                </li>
+                <li>
+                    <a href="#">Discover</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
+    <main class="thankyou-main">
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="footer__contact-info">
+            <p>ConnectPros Chamber of Commerce</p>
+            <p><span>Address:</span> 1234 Fake Address Ln, Moon UT 80404</p>
+            <p><span>Email:</span> info@connectpros.org</p>
+            <p><span>Phone Number:</span> (333) 555-7755</p>
+        </div>
+        <div class="footer__media_icons">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook-icon.svg" alt="Facebook Icon" width="64" height="64">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram-icon.svg" alt="Instagram Icon" width="64" height="64">
+            </a>
+            <a href="https://www.tiktok.com/">
+                <img src="images/tiktok-icon.svg" alt="TikTok Icon" width="64" height="64">
+            </a>
+        </div>
+        <div>
+            <p><span id="current-year">©</span> ConnectPros Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
     </footer>
 </body>
 

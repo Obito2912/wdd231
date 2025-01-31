@@ -28,6 +28,9 @@ const membershipInfo = [
 const buttons = document.querySelectorAll(".section2 div button");
 const dialog = document.querySelector(".dialog");
 const membershipTitles = document.querySelectorAll(".section2 div p");
+const timeStamp = document.querySelector('#timestamp');
+timeStamp.value = new Date().toISOString();
+console.log(timeStamp); 
 
 function createDialogContent(index) {
   

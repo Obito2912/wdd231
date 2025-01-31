@@ -11,6 +11,7 @@ body {
     display: grid;
     grid: 70px auto 250px / auto;
     background-color: #003049;
+    overflow-x: hidden;
 }
 
 @media screen and (min-width: 800px) {
@@ -747,6 +748,12 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .form input,
+    .form textarea,
+    .form select {
+        height: 2.2rem;
+    }
+
     .form input[type=submit]:hover {
         color: #a86262;
     }
@@ -770,11 +777,33 @@ body {
     }
 
     .section2 div:nth-of-type(1) {
-        margin-top: auto;
+        animation: slide-in 1.5s ease-out 0s 1 normal forwards;
     }
 
-    .section2 div:nth-of-type(4) {
-        margin-bottom: auto;
+    .section2 div:nth-of-type(2) {
+        animation: slide-in 2s ease-out 0s 1 normal forwards;
+    }
+
+    .section2 div:nth-of-type(3) {
+        animation: slide-in 2.5s ease-out 0s 1 normal forwards;
+    }
+
+    .section2 div:last-child {
+        animation: slide-in 3s ease-out 0s 1 normal forwards;
+    }
+
+    @keyframes slide-in {
+        0% {
+            translate: 150vw 0;
+        }
+
+        100% {
+            translate: 0 0;
+        }
+    }
+
+    .section2 div:nth-of-type(1) {
+        margin-top: 50px ;
     }
 
     .section2 div button {
