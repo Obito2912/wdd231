@@ -602,6 +602,10 @@ body {
     display: block;
 }
 
+.form label span {
+    color: #fed7fd;
+}
+
 .form label:has(textarea),
 .form label[for="membership"] {
     margin-bottom: 0;

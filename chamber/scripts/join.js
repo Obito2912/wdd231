@@ -3,25 +3,25 @@ const membershipInfo = [
     cost: 50,
     benefits: "You will be able to...",
     training: "Training will be provided for your team once...",
-    advertising: "You will get spotlights position in our home page once...",
+    advertising: "You will get spotlight positions in our home page once...",
   },
   {
     cost: 60,
     benefits: "You will be able to...",
     training: "Training will be provided for your team once...",
-    advertising: "You will get spotlights position in our home page once...",
+    advertising: "You will get spotlight positions in our home page once...",
   },
   {
     cost: 80,
     benefits: "You will be able to...",
     training: "Training will be provided for your team once...",
-    advertising: "You will get spotlights position in our home page once...",
+    advertising: "You will get spotlight positions in our home page once...",
   },
   {
     cost: 100,
     benefits: "You will be able to...",
     training: "Training will be provided for your team once...",
-    advertising: "You will get spotlights position in our home page once...",
+    advertising: "You will get spotlight positions in our home page once...",
   },
 ];
 
