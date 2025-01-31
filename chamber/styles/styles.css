@@ -755,6 +755,11 @@ body {
         color: #003049;
     }
 
+    .section1,
+    .section2 {
+        margin-inline: 0;
+    }
+
     .section1 {
         margin-left: auto;
     }
