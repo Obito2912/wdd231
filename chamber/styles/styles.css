@@ -823,3 +823,52 @@ body {
         cursor: pointer;
     }
 }
+
+/* =======================================================================  THANK YOU PAGE ======================================================================= */
+
+.thankyou-main {
+    display: flex;
+}
+
+.thankyou-main div {
+    width: 90%;
+    margin: auto;
+    background-color: #004e5f;
+    padding: 1em;
+    box-shadow: inset 0 0 5px #000;
+}
+
+.thankyou-main div h1 {
+    color: #ffa8a8;
+    margin-bottom: 1em;
+}
+
+.thankyou-main div h2 {
+    color: #c0c0c0;
+    margin-bottom: .8em;
+}
+
+.thankyou-main div h1,
+.thankyou-main div h2 {
+    text-align: center;
+}
+
+.thankyou-main div strong {
+    color: #ffa8a8;
+}
+
+.thankyou-main div p {
+    color: #c0c0c0;
+    margin-bottom: .4em;
+}
+
+@media screen and (min-width: 800px) {
+    .thankyou-main div {
+        width: 50%;
+        max-width: 900px;
+    }
+
+    .thankyou-main div h1 {
+        margin-bottom: 0;
+    }
+}
