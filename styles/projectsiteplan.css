@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Otaku Rant';
+    src: url(../fonts/otaku-rant.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    font-family: sans-serif;
+    color: #003cff;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    grid: 50px auto 50px / auto;
+    font-family: 'fuzzy-bubbles', sans-serif;
+    color: #292929;
+}
+
+main {
+    width: 70%;
+    margin-inline: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Otaku Rant';
+    margin: 1rem 0;
+    color: #476f94 ;
+}
+
+header {
+    background-color: #e5f9e0;
+    padding: .5em;
+}
+
+header span {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+}
+
+p a:first-child {
+    margin-bottom: 10px;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    background-color: #e5f9e0;
+    padding: .5em;
+    margin-top: 15px;
+}
