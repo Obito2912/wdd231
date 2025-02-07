@@ -941,3 +941,8 @@ body:has(.discover__card) {
     border-radius: 5px;
     /* cursor: pointer; */
 }
+
+.discover__card button:active {
+    background-color: #FBAA00;
+    color: #d1fcff;
+}
