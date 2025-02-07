@@ -807,7 +807,7 @@ body {
     }
 
     .section2 div:nth-of-type(1) {
-        margin-top: 50px ;
+        margin-top: 50px;
     }
 
     .section2 div button {
@@ -904,25 +904,27 @@ body:has(.discover__card) {
     color: #C8C8FF;
     border: 1px solid #d1fcff;
     display: grid;
-    grid-template-areas: 
-    "imageContainer"
-    "infoContainer"
-    ;
-    /* box-shadow: 0 0 10px #d1fcff; */
+    grid-template-areas:
+        "image"
+        "infoContainer";
+    min-height: 300px;
 }
 
 .discover__card div:first-child {
     grid-area: imageContainer;
-
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .discover__card div:last-child {
     grid-area: infoContainer;
-    grid-template-areas: 
-    "title"
-    "description"
-    "address"
-    "button";
+    grid-template-areas:
+        "title"
+        "description"
+        "address"
+        "button";
     padding: .5em;
 }
 
@@ -931,8 +933,9 @@ body:has(.discover__card) {
 }
 
 .discover__card img {
-    width: 100%;
+    width: 300px;
     height: auto;
+    grid-area: image;
 }
 
 .discover__card h2 {
@@ -941,7 +944,7 @@ body:has(.discover__card) {
     grid-area: title;
 }
 
-.discover__card p {
+.discover__card p:first-of-type {
     /* display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -964,7 +967,6 @@ body:has(.discover__card) {
     border: none;
     border-radius: 5px;
     grid-area: button;
-    /* cursor: pointer; */
 }
 
 .discover__card button:active {
@@ -973,10 +975,36 @@ body:has(.discover__card) {
 }
 
 @media screen and (min-width: 38rem) {
-    
+
+    .discover__card div {
+        grid-template-areas:
+            "title"
+            "description"
+            "address"
+            "button";
+    }
+
+    .discover__card button {
+        cursor: pointer;
+    }
 }
 
 @media screen and (min-width: 64rem) {
-    
-}
+    .discover__main {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 1.3rem;
+    }
 
+    .discover__main h1 {
+        grid-column: 1 / 3;
+    }
+
+    .discover__card {
+        grid-template-areas:
+            "image infoContainer";
+    }
+
+    .discover__card:last-child {
+        margin-bottom: 0;
+    }
+}

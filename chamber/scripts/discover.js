@@ -6,9 +6,7 @@ function createCard(data) {
     const card = document.createElement('div');
     card.setAttribute('class', 'discover__card');
     card.innerHTML = `
-    <div>
-        <img src=${data.image} alt=${data.title} width=300 alt=200 loading='lazy'>
-    </div>
+    <img src=${data.image} alt=${data.title} width=300 alt=200 loading='lazy'>
     <div>
     <h2>${data.title}</h2>
     <p>${data.description}</p>
