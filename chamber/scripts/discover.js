@@ -1,20 +1,6 @@
-const main = document.querySelector(".discover__main");
-const items = "data/items.json";
+import { items } from "../data/items.mjs";
 
-async function GetItems() {
-  try {
-    const response = await fetch(items);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data);
-      displayCards(data);
-    } else {
-      throw Error(response.text());
-    }
-  } catch (error) {
-    console.log(error);
-  }
-}
+const main = document.querySelector(".discover__main");
 
 function createCard(data) {
     const card = document.createElement('div');
@@ -26,6 +12,7 @@ function createCard(data) {
     <div>
     <h2>${data.title}</h2>
     <p>${data.description}</p>
+    <p>${data.address}</p>
     <button>Learn More</button>
     </div>
     `;
@@ -38,4 +25,4 @@ function displayCards(data) {
     });
 }
 
-GetItems();
+displayCards(items);

@@ -1,4 +1,4 @@
-[
+export const items = [
     {
         "title": "Heritage Park",
         "address": "250 N Fairfield Rd, Kaysville, UT 84037",
@@ -9,7 +9,7 @@
     {
         "title": "Cherry Hill Water Park",
         "address": "1325 S Main St, Kaysville, UT 84037",
-        "description": "Located in Kaysville, Utah on 20 acres that once was a working fruit farm, Cherry Hill has over 700 trees, many of which are cherry trees. Cherry Hill offers a Water Park with water slides, a foam padded River Run, Lazy River, children’s water playground called Pirates Cove and 2 pools. Other activities include Batting Cages, Mini Golf, a Climbing Rock, Video Arcades, Snack Bars and a Restaurant. Each Friday and Saturday evening of the summer, they offer free live entertainment.",
+        "description": "Located in Kaysville, Utah on 20 acres that once was a working fruit farm, Cherry Hill has over 700 trees, many of which are cherry trees. Cherry Hill offers a Water Park with water slides, a foam padded River Run, Lazy River, children's water playground called Pirates Cove and 2 pools. Other activities include Batting Cages, Mini Golf, a Climbing Rock, Video Arcades, Snack Bars and a Restaurant. Each Friday and Saturday evening of the summer, they offer free live entertainment.",
         "image": "images/cherry-hill-water-park-kaysville1.webp"
     },
 
@@ -54,4 +54,4 @@
         "description": "The Great Salt Lake Shorelands Preserve spans 4,400 acres of wetlands and uplands habitat along the eastern edge of the Great Salt Lake—one of Utah's most unique natural treasures. As the largest saline lake in the Western Hemisphere, the Great Salt Lake is crucial to both people and nature. The lake is a rich feeding ground for migratory shorebirds and waterfowl, supporting 10 million migratory birds each year as they journey from as far north as the Arctic to southern points in Central and South America.",
         "image": "images/great-salt-lake-shorelands-preserve-kaysville.webp"
     }
-]
+];

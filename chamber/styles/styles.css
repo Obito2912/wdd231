@@ -899,13 +899,30 @@ body:has(.discover__card) {
 
 .discover__card {
     background-color: #003049;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
     color: #C8C8FF;
-    box-shadow: 0 0 5px #d1fcff;
+    border: 1px solid #d1fcff;
+    display: grid;
+    grid-template-areas: 
+    "imageContainer"
+    "infoContainer"
+    ;
+    /* box-shadow: 0 0 10px #d1fcff; */
+}
+
+.discover__card div:first-child {
+    grid-area: imageContainer;
+
 }
 
 .discover__card div:last-child {
+    grid-area: infoContainer;
+    grid-template-areas: 
+    "title"
+    "description"
+    "address"
+    "button";
     padding: .5em;
 }
 
@@ -921,15 +938,22 @@ body:has(.discover__card) {
 .discover__card h2 {
     margin-bottom: .5rem;
     color: #00eeff;
+    grid-area: title;
 }
 
 .discover__card p {
-    display: -webkit-box;
+    /* display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
     color: #d1fcff;
+    grid-area: description;
+}
+
+.discover__card p:last-of-type {
+    margin-top: .8rem;
+    grid-area: address;
 }
 
 .discover__card button {
@@ -939,6 +963,7 @@ body:has(.discover__card) {
     margin-top: 10px;
     border: none;
     border-radius: 5px;
+    grid-area: button;
     /* cursor: pointer; */
 }
 
@@ -946,3 +971,12 @@ body:has(.discover__card) {
     background-color: #FBAA00;
     color: #d1fcff;
 }
+
+@media screen and (min-width: 38rem) {
+    
+}
+
+@media screen and (min-width: 64rem) {
+    
+}
+
