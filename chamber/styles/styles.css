@@ -297,6 +297,7 @@ body {
     color: #fff;
     place-content: center;
     border-top: 1px solid #f6faf6;
+    min-width: 320px;
 }
 
 .footer p:first-child {
@@ -308,6 +309,7 @@ body {
 
 .footer p {
     margin-bottom: .3em;
+    min-width: 320px;
 }
 
 .footer .footer__contact-info p:last-child {
@@ -883,10 +885,16 @@ body:has(.discover__card) {
     background-color: #002134;
 }
 
+.message {
+    margin: 0 auto -20px;
+    grid-column: 1 / 3;
+    font-size: 1.5rem;
+    color: #a86262;
+}
+
 .discover__main {
-    margin-inline: auto;
-    width: 95%;
     display: grid;
+    justify-items: center;
     gap: 15px;
 }
 
@@ -895,6 +903,7 @@ body:has(.discover__card) {
     font-size: 1.3rem;
     margin-top: .5rem;
     color: #d1fcff;
+    min-height: 25px;
 }
 
 .discover__card {
@@ -907,18 +916,10 @@ body:has(.discover__card) {
     grid-template-areas:
         "image"
         "infoContainer";
-    min-height: 300px;
+    width: 300px;
 }
 
-.discover__card div:first-child {
-    grid-area: imageContainer;
-    max-width: 300px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.discover__card div:last-child {
+.discover__card div {
     grid-area: infoContainer;
     grid-template-areas:
         "title"
@@ -926,6 +927,8 @@ body:has(.discover__card) {
         "address"
         "button";
     padding: .5em;
+    min-height: 300px;
+    min-width: 300px;
 }
 
 .discover__card:last-child {
@@ -934,7 +937,7 @@ body:has(.discover__card) {
 
 .discover__card img {
     width: 300px;
-    height: auto;
+    height: 200px;
     grid-area: image;
 }
 
@@ -976,6 +979,15 @@ body:has(.discover__card) {
 
 @media screen and (min-width: 38rem) {
 
+    .discover__card {
+        grid-template-areas: "image infoContainer";
+        width: auto;
+    }
+
+    .discover__card div {
+        min-height: 200px;
+    }
+
     .discover__card div {
         grid-template-areas:
             "title"
@@ -987,9 +999,26 @@ body:has(.discover__card) {
     .discover__card button {
         cursor: pointer;
     }
+
+    .discover__card button:hover {
+        background-color: #000;
+        color: #fff;
+    }
 }
 
 @media screen and (min-width: 64rem) {
+    .hover {
+        filter: blur(3px);
+    }
+    
+    .hover {
+        transition: filter .5s ease-in-out;
+    }
+
+    .hover:hover {
+        filter: blur(0);
+    }
+
     .discover__main {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 1.3rem;
@@ -1000,8 +1029,8 @@ body:has(.discover__card) {
     }
 
     .discover__card {
-        grid-template-areas:
-            "image infoContainer";
+        grid-template-areas: "image infoContainer";
+        width: auto;
     }
 
     .discover__card:last-child {

@@ -7,7 +7,7 @@ console.log(navLinks);
 const currentPage = window.location.pathname.split('/').pop();
 const currentPageName = currentPage.split('.');
 const date = new Date();
-year.textContent += date.getFullYear();
+year.textContent = date.getFullYear();
 lastModified.textContent = document.lastModified;
 
 navLinks.forEach(link => {
