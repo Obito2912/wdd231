@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Heritage Park",
+        "address": "250 N Fairfield Rd, Kaysville, UT 84037",
+        "description": "Heritage Park is one of the newest additions to our Kaysville City Parks. It was designed to be a gathering place for all of Kaysville's residents. The .30 mile walking path is lined with trees donated by Kaysville Residents and Business's. The Splash Pad is open from 11-7 pm, Monday- Saturdays for the hot summer evenings. It will open on May 26th, and it will be closing on Labor Day at 6pm. The Water Mill and the Pioneer House make wonder additions to our Kaysville heritage and the open grass area makes for a great place to throw a frisbee or toss a football.",
+        "image": "images/heritage-park-kaysville.webp"
+    },
+
+    {
+        "title": "Cherry Hill Water Park",
+        "address": "1325 S Main St, Kaysville, UT 84037",
+        "description": "Located in Kaysville, Utah on 20 acres that once was a working fruit farm, Cherry Hill has over 700 trees, many of which are cherry trees. Cherry Hill offers a Water Park with water slides, a foam padded River Run, Lazy River, children’s water playground called Pirates Cove and 2 pools. Other activities include Batting Cages, Mini Golf, a Climbing Rock, Video Arcades, Snack Bars and a Restaurant. Each Friday and Saturday evening of the summer, they offer free live entertainment.",
+        "image": "images/cherry-hill-water-park-kaysville1.webp"
+    },
+
+    {
+        "title": "Buddha Belly Chinese",
+        "address": "66 S Main St STE 6, Kaysville, UT 84037",
+        "description": "Chinese Restaurant located in Kaysville, UT. You can order online through our website or using delivery apps like Doordash or UberEats, or visit us to enjoy our affordable prices and delicious food.",
+        "image": "images/buddha-belly-chinese.webp"
+    },
+
+    {
+        "title": "Antelope Island State Park",
+        "address": "Antelope Island, Syracuse, UT 84075",
+        "description": "Visitors to Antelope Island State Park drive across the causeway, a narrow two-lane road spanning from mainland to island, leaving the bustle of the Wasatch Front for a refuge of rangelands floating on a desert sea. Visitors will want to hike, bike and look for wildlife, as well as experience the best place to access Great Salt Lake. Be sure to visit the Fielding Garr Ranch located on the southeast side of the island. The Fielding Garr Ranch House is distinctive for two reasons: first, it is the oldest continually inhabited Anglo home in the state of Utah (from 1848 to 1981 when the island became a state park), and second, it is the oldest Anglo built house in Utah still on its original foundation.",
+        "image": "images/antelope-island-state-park-kaysville.webp"
+    },
+
+    {
+        "title": "Utah Botanical Center",
+        "address": "875 S 50 W, Kaysville, UT 84037",
+        "description": "Run by Utah State University (USU), the USU Botanical Center is all about plants. The center's mission is to guide the conservation and use of plants, water and energy through various fun activities. You can experience the outdoor gardens and trails open from dawn until dusk, 365 days per year or gain education on botany at the Kaysville Education Center. Visitation is free. Classes may have additional fees.",
+        "image": "images/utah-botanical-center-kaysville.webp"
+    },
+
+    {
+        "title": "Lagoon Amusement Park",
+        "address": "375 N Lagoon Dr, Farmington, UT 84025",
+        "description": "Lagoon is one of the only family owned amusement parks left in the country. With over 60 thrilling rides, 40 challenging games, live entertainment, a beautiful water park, the largest 'kiddie land' of any amusement park in the nation, Pioneer Village, and the Campground, Lagoon offers something for everyone to enjoy.",
+        "image": "images/lagoon-amusement-park-kaysville.webp"
+    },
+
+    {
+        "title": "Davis Park Golf Course",
+        "address": "1074 Nicholls Rd, Kaysville, UT 84037",
+        "description": "Davis Park Golf Course is a public golf course located on the benches of Fruit Heights, Utah. The course has beautiful views of the valley, lake, and mountains. It is known for its smooth putting surfaces and great staff. It also has strong Ladies, Men's and Junior Associations. Whether you are an accomplished player, novice, beginner or just someone looking for a relaxing atmosphere, Davis Park Golf Course has something for everyone.",
+        "image": "images/davis-park-golf-course-kaysville.webp"
+    },
+
+    {
+        "title": "Great Salt Lake Shorelands Preserve",
+        "address": "100 W Glovers Ln, Layton, UT 84041",
+        "description": "The Great Salt Lake Shorelands Preserve spans 4,400 acres of wetlands and uplands habitat along the eastern edge of the Great Salt Lake—one of Utah's most unique natural treasures. As the largest saline lake in the Western Hemisphere, the Great Salt Lake is crucial to both people and nature. The lake is a rich feeding ground for migratory shorebirds and waterfowl, supporting 10 million migratory birds each year as they journey from as far north as the Arctic to southern points in Central and South America.",
+        "image": "images/great-salt-lake-shorelands-preserve-kaysville.webp"
+    }
+]
