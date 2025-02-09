@@ -895,6 +895,7 @@ body:has(.discover__card) {
     display: grid;
     justify-items: center;
     gap: 15px;
+    min-height: 4400px;
 }
 
 .discover__main h1 {
@@ -977,6 +978,10 @@ body:has(.discover__card) {
 }
 
 @media screen and (min-width: 38rem) {
+
+    .discover__main {
+        min-height: auto;
+    }
 
     .discover__card {
         grid-template-areas: "image infoContainer";
