@@ -887,7 +887,6 @@ body:has(.discover__card) {
 
 .message {
     margin: 0 auto -20px;
-    grid-column: 1 / 3;
     font-size: 1.5rem;
     color: #a86262;
 }
@@ -1007,6 +1006,11 @@ body:has(.discover__card) {
 }
 
 @media screen and (min-width: 64rem) {
+
+    .message {
+        grid-column: 1 / 3;
+    }
+
     .hover {
         filter: blur(3px);
     }
