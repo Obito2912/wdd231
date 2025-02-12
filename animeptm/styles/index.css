@@ -20,5 +20,16 @@ body {
 }
 
 header, footer {
-    background-color: #e5f9e0;
+    background-color: #f3de2c;
+}
+
+header {
+    font-family: 'Otaku Rant';
+    display: grid;
+    align-items: center;
+}
+
+.name__container {
+    font-weight: bold;
+    font-size: 2rem;
 }
