@@ -87,12 +87,11 @@ header {
 
 .nav-menu {
     transform: translateY(-200%);
-    background-color: #143642;
     width: 100%;
     position: absolute;
     top: calc(100%);
     left: 0;
-    background-image: radial-gradient(circle, #ffae00a6 0%, #292929 50%, #ffae00a6 100%);
+    background-image: radial-gradient(circle, transparent 45%, #ff4444 50%, transparent 55%);
     transition: transform .5s ease-in-out;
 }
 

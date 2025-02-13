@@ -3,9 +3,18 @@ const menuIcon = document.querySelector('.menu-icon');
 const navMenu = document.querySelector('.nav-menu');
 
 menuIconContainer.addEventListener('click', () => {
-    // navMenu.classList.toggle('toggle-open-menu');
     animateMenuIcon();
-    animateMenu(navMenu);
+    if (!navMenu.classList.contains('show')) {
+        navMenu.classList.add('show');
+        navMenu.style.visibility = 'visible';
+        navMenu.style.opacity = '1';
+    } else {
+        navMenu.classList.remove('show');
+        setTimeout(() => {
+            navMenu.style.visibility = 'hidden';
+            navMenu.style.opacity = '0';
+        }, 500);
+    }
 });
 
 function animateMenu(menu) {
