@@ -4,7 +4,10 @@ const navMenu = document.querySelector('.nav-menu');
 
 menuIconContainer.addEventListener('click', () => {
     navMenu.classList.toggle('toggle-open-menu');
-    
+    animateMenuIcon();
+});
+
+function animateMenuIcon() {
     if (!menuIcon.classList.contains('rotate')) {
         menuIcon.classList.remove('rotate-back');
         menuIcon.classList.add('rotate');
@@ -12,4 +15,4 @@ menuIconContainer.addEventListener('click', () => {
         menuIcon.classList.remove('rotate');
         menuIcon.classList.add('rotate-back');
     }
-});
+}
