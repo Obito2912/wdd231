@@ -13,7 +13,7 @@ body {
 header,
 footer {
     background-image:
-        radial-gradient(#ffbb0081, #ffae00);
+        radial-gradient(#ffbb0081, #ff8800);
 }
 
 header {
@@ -86,21 +86,21 @@ header {
 }
 
 .nav-menu {
-    transform: translateY(-200%);
+    transform: translateX(-200%);
     width: 100%;
     position: absolute;
     top: calc(100%);
     left: 0;
-    background-image: radial-gradient(circle, transparent 45%, #ff4444 50%, transparent 55%);
+    background-image: linear-gradient(to right, #ff444486 10%, transparent 20%, transparent 80%, #ff444486 90%);
     transition: transform .5s ease-in-out;
 }
 
 .nav-menu.show {
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .nav-menu.hide {
-    transform: translateY(-200%);
+    transform: translateX(-200%);
 }
 
 .nav-menu__list {
@@ -125,7 +125,7 @@ header {
 }
 
 .nav-menu__list:has(.nav-menu__link:active) {
-    background-color: #29292975;
+    background-color: #ff444486;
 }
 
 .main {
