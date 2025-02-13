@@ -3,33 +3,98 @@
     src: url(../fonts/otaku-rant.ttf);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    height: 100%;
-}
-
 body {
     display: grid;
-    grid: 80px auto 80px / auto;
+    grid: 50px auto 80px / auto;
     min-height: 100vh;
+    font-family: 'fuzzy-bubbles', sans-serif;
 }
 
-header, footer {
-    background-color: #f3de2c;
+header,
+footer {
+    background-image:
+        radial-gradient(#ffbb0081, #ffae00);
 }
 
 header {
-    font-family: 'Otaku Rant';
     display: grid;
-    align-items: center;
+    place-content: center;
+    position: relative;
+}
+
+.menu-icon__container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.menu-icon {
+    display: block;
+    width: 30px;
 }
 
 .name__container {
     font-weight: bold;
     font-size: 2rem;
+}
+
+.regular,
+.small {
+    font-family: 'Otaku Rant';
+    text-align: center;
+    line-height: .7;
+}
+
+.small {
+    font-size: .7rem;
+}
+
+.nav-menu {
+    display: none;
+    background-color: #143642;
+    width: 80%;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    overflow: hidden;
+    background-image: radial-gradient(circle, #ffae00a6 0%, #292929 50%, #ffae00a6 100%);
+}
+
+.toggle-open-menu {
+    display: block;
+}
+
+.nav-menu__list {
+    list-style: none;
+    width: 100%;
+}
+
+.nav-menu__link {
+    color: #292929;
+    display: block;
+    text-align: center;
+    place-content: center;
+    width: 100%;
+    height: 40px;
+    -webkit-tap-highlight-color: transparent;
+    background-image: radial-gradient(#e5f9e0, #ffbb0081);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-menu__link:active {
+    color: #292929;
+}
+
+.nav-menu__list:has(.nav-menu__link:active) {
+    background-color: #e7c06c;
+}
+
+.main {
+    background-color: #292929;
 }

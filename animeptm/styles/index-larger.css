@@ -1,0 +1,9 @@
+
+@media screen and (min-width: 800px) {
+    body {
+        display: grid;
+        grid: 80px auto 150px / auto;
+        min-height: 100vh;
+        font-family: 'fuzzy-bubbles', sans-serif;
+    }
+}
