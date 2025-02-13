@@ -3,9 +3,19 @@ const menuIcon = document.querySelector('.menu-icon');
 const navMenu = document.querySelector('.nav-menu');
 
 menuIconContainer.addEventListener('click', () => {
-    navMenu.classList.toggle('toggle-open-menu');
+    // navMenu.classList.toggle('toggle-open-menu');
     animateMenuIcon();
+    animateMenu(navMenu);
 });
+
+function animateMenu(menu) {
+    menu.classList.toggle('show');
+    if (!menu.classList.contains('show')) {
+        menu.classList.add('hide');
+    } else {
+        menu.classList.remove('hide');
+    }
+}
 
 function animateMenuIcon() {
     if (!menuIcon.classList.contains('rotate')) {
