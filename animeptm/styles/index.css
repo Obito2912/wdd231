@@ -54,13 +54,11 @@ header {
 .nav-menu {
     display: none;
     background-color: #143642;
-    width: 80%;
+    width: 100%;
     position: absolute;
-    top: calc(100% + 10px);
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 5px;
-    overflow: hidden;
+    top: calc(100%);
+    left: 0;
+    /* border-radius: 5px; */
     background-image: radial-gradient(circle, #ffae00a6 0%, #292929 50%, #ffae00a6 100%);
 }
 
