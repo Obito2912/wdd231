@@ -24,13 +24,14 @@ function createInfoCard(data) {
             src='${data[0].trailer.embed_url}'
             allowfullscreen
             allow="accelerometer; 
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share"
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share"
             referrerpolicy="strict-origin-when-cross-origin">
         </iframe>
+        <h2>${data[0].title_english}</h2>
         <p class='synopsis'>Synopsis: ${data[0].synopsis}</p>
         <button>Learn More</button>
     </div>
