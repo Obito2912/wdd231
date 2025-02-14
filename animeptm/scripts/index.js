@@ -15,25 +15,16 @@ async function getAnimeData() {
     console.log(e);
   }
 }
-    // <iframe
-    //     src='${data[index].trailer.embed_url}'
-    //     allowfullscreen
-    //     allow="accelerometer; 
-    //         clipboard-write;
-    //         encrypted-media;
-    //         gyroscope;
-    //         picture-in-picture;
-    //         web-share"
-    //     referrerpolicy="strict-origin-when-cross-origin">
-    // </iframe>
 
 function createInfoCard(data, index) {
   cardContainer.innerHTML += `
   <div class='card'>
         <img src='${data[index].images.webp.image_url}' alt='${data[index].title_english} image' width='200' height='300' loading='lazy'>
-        <h2>${data[index].title_english}</h2>
-        <p class='synopsis'><strong>Synopsis:</strong> ${data[index].synopsis}</p>
-        <button>Learn More</button>
+        <div>
+            <h2>${data[index].title_english}</h2>
+            <p class='synopsis'><strong>Synopsis:</strong> ${data[index].synopsis}</p>
+            <button>Learn More</button>
+        </div>
     </div>
     `;
 }
@@ -75,3 +66,15 @@ function displayData(data) {
 }
 
 getAnimeData();
+
+// <iframe
+//     src='${data[index].trailer.embed_url}'
+//     allowfullscreen
+//     allow="accelerometer;
+//         clipboard-write;
+//         encrypted-media;
+//         gyroscope;
+//         picture-in-picture;
+//         web-share"
+//     referrerpolicy="strict-origin-when-cross-origin">
+// </iframe>

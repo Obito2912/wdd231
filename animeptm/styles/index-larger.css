@@ -1,9 +1,49 @@
-
 @media screen and (min-width: 800px) {
-    body {
+
+    .card__container {
+        min-height: calc(350px * 15);
+    }
+
+    .card {
         display: grid;
-        grid: 80px auto 150px / auto;
-        min-height: 100vh;
-        font-family: 'fuzzy-bubbles', sans-serif;
+        grid-template-areas:
+            'image cardDiv';
+        min-width: 530px;
+        min-height: 300px;
+    }
+
+    .card h2 {
+        margin: 0 0 10px;
+    }
+
+    /* .synopsis {
+        -webkit-line-clamp: 10;
+        line-clamp: 10;
+        margin: 0;
+    } */
+
+    .card img {
+        margin: 0;
+        width: 200px;
+        height: auto;
+    }
+
+    .card button {
+        margin: 10px auto 10px;
+    }
+
+    .card div {
+        grid-area: cardDiv;
+        max-height: 50px;
+    }
+
+    .card img {
+        grid-area: image;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card__container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
