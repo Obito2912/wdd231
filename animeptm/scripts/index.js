@@ -1,37 +1,44 @@
-const menuIconContainer = document.querySelector('.menu-icon__container');
-const menuIcon = document.querySelector('.menu-icon');
-const navMenu = document.querySelector('.nav-menu');
+const animeURL = "https://api.jikan.moe/v4/anime";
+const cardContainer = document.querySelector('.card__container');
 
-menuIconContainer.addEventListener('click', () => {
-    animateMenuIcon();
-    if (!navMenu.classList.contains('show')) {
-        navMenu.classList.add('show');
-        navMenu.style.visibility = 'visible';
-        navMenu.style.opacity = '1';
+async function getAnimeData() {
+  try {
+    const response = await fetch(animeURL);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data);
+      createInfoCard(data.data);
+      displayData(data);
     } else {
-        navMenu.classList.remove('show');
-        setTimeout(() => {
-            navMenu.style.visibility = 'hidden';
-            navMenu.style.opacity = '0';
-        }, 500);
+      throw Error(await response.text());
     }
-});
-
-function animateMenu(menu) {
-    menu.classList.toggle('show');
-    if (!menu.classList.contains('show')) {
-        menu.classList.add('hide');
-    } else {
-        menu.classList.remove('hide');
-    }
+  } catch (e) {
+    console.log(e);
+  }
 }
 
-function animateMenuIcon() {
-    if (!menuIcon.classList.contains('rotate')) {
-        menuIcon.classList.remove('rotate-back');
-        menuIcon.classList.add('rotate');
-    } else {
-        menuIcon.classList.remove('rotate');
-        menuIcon.classList.add('rotate-back');
-    }
+function createInfoCard(data) {
+    cardContainer.innerHTML += `
+    <div class='card'>
+        <iframe
+            src='${data[0].trailer.embed_url}'
+            allowfullscreen
+            allow="accelerometer; 
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share"
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+        <p class='synopsis'>Synopsis: ${data[0].synopsis}</p>
+        <button>Learn More</button>
+    </div>
+    `;
 }
+
+function displayData(data) {
+
+}
+
+getAnimeData();

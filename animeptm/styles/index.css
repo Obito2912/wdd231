@@ -92,7 +92,7 @@ header {
     position: absolute;
     top: calc(100%);
     left: 0;
-    background-image: linear-gradient(to right, #ffbb0081 0%, #292929 20%, #292929 80%, #ffbb0081 100%);
+    background-image: linear-gradient(to right, hsla(34, 100%, 46%, 0.502) 0%, #292929 20%, #292929 80%, hsla(34, 100%, 46%, 0.502) 100%);
     transition: transform .5s ease-in-out;
 }
 
@@ -121,8 +121,12 @@ header {
     font-weight: bold;
 }
 
+.js-active {
+    border-bottom: 1px solid #ff8800;
+}
+
 .nav-menu__list:has(.nav-menu__link:active) {
-    background-color: #ff444486;
+    background-color: hsla(36, 68%, 55%, 0.5);
 }
 
 .main {
@@ -136,6 +140,34 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+.card__container {
+    margin-top: 10px;
+}
+
+.card {
+    padding: .5em;
+    background-image: radial-gradient(hsla(34, 100%, 46%, 0.502), #292929);
+}
+
+.card iframe {
+    border: none;
+}
+
+.synopsis {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+.card button {
+    display: block;
+    margin: 10px auto 0;
+    padding: .5em 1em;
 }
 
 .social-media__container {
