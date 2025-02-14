@@ -15,23 +15,24 @@ async function getAnimeData() {
     console.log(e);
   }
 }
+    // <iframe
+    //     src='${data[index].trailer.embed_url}'
+    //     allowfullscreen
+    //     allow="accelerometer; 
+    //         clipboard-write;
+    //         encrypted-media;
+    //         gyroscope;
+    //         picture-in-picture;
+    //         web-share"
+    //     referrerpolicy="strict-origin-when-cross-origin">
+    // </iframe>
 
 function createInfoCard(data, index) {
   cardContainer.innerHTML += `
-    <div class='card'>
-        <iframe
-            src='${data[index].trailer.embed_url}'
-            allowfullscreen
-            allow="accelerometer; 
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share"
-            referrerpolicy="strict-origin-when-cross-origin">
-        </iframe>
+  <div class='card'>
+        <img src='${data[index].images.webp.image_url}'>
         <h2>${data[index].title_english}</h2>
-        <p class='synopsis'>Synopsis: ${data[index].synopsis}</p>
+        <p class='synopsis'><strong>Synopsis:</strong> ${data[index].synopsis}</p>
         <button>Learn More</button>
     </div>
     `;
