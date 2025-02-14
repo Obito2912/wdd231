@@ -40,29 +40,23 @@ function doNotShow(data, index) {
 }
 
 function displayData(data) {
-  const maxCards = 15;
-  let startIndex = 1;
-  let cardsCreated = 0;
+//   const maxCards = 15;
+  let startIndex = 0;
+//   let cardsCreated = 0;
 
-  do {
-    for (let index = startIndex; index < data.length; index++) {
-      if (
-        data[index] &&
-        data[index].trailer &&
-        data[index].trailer.embed_url &&
-        data[index].synopsis
-      ) {
-        if (!doNotShow(data, index)) {
-          createInfoCard(data, index);
-          cardsCreated++;
-          if (cardsCreated >= maxCards) {
-            break;
-          }
-        }
+  for (let index = startIndex; index < data.length; index++) {
+    
+    if (
+      data[index] &&
+      data[index].trailer &&
+      data[index].trailer.embed_url &&
+      data[index].synopsis
+    ) {
+      if (!doNotShow(data, index)) {
+        createInfoCard(data, index);
       }
     }
-    startIndex++;
-  } while (cardsCreated < maxCards && startIndex < data.length);
+  }
 }
 
 getAnimeData();
