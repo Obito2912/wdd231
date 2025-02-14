@@ -50,7 +50,7 @@ function doNotShow(data, index) {
 
 function displayData(data) {
   const maxCards = 15;
-  let startIndex = 0;
+  let startIndex = 1;
   let cardsCreated = 0;
 
   do {
