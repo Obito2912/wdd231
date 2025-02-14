@@ -6,7 +6,7 @@
 body {
     display: grid;
     grid: 50px auto 80px / auto;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     font-family: 'fuzzy-bubbles', sans-serif;
 }
 
@@ -148,14 +148,13 @@ h2 {
     color: #292929;
     width: 280px;
     margin-inline: auto;
-    grid-area: title;
 }
 
 .card__container {
     display: grid;
     gap: 20px;
     margin: 10px 0 20px;
-    min-height: calc(550px * 15);
+    min-height: 100vh;
 }
 
 .card {
@@ -175,7 +174,6 @@ h2 {
     } */
 
 .card img {
-    grid-area: 'image';
     display: block;
     margin: 0 auto 10px;
     width: 280px;

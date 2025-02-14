@@ -1,26 +1,21 @@
 @media screen and (min-width: 800px) {
 
-    .card__container {
-        min-height: calc(350px * 15);
-    }
-
     .card {
         display: grid;
         grid-template-areas:
             'image cardDiv';
         min-width: 530px;
-        min-height: 300px;
     }
 
     .card h2 {
         margin: 0 0 10px;
     }
 
-    /* .synopsis {
+    .synopsis {
         -webkit-line-clamp: 10;
         line-clamp: 10;
         margin: 0;
-    } */
+    }
 
     .card img {
         margin: 0;
@@ -34,7 +29,6 @@
 
     .card div {
         grid-area: cardDiv;
-        max-height: 50px;
     }
 
     .card img {
@@ -45,5 +39,11 @@
 @media screen and (min-width: 1024px) {
     .card__container {
         grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    .card {
+        margin: 0 auto 0;
     }
 }
