@@ -7,7 +7,7 @@ async function getAnimeData() {
     if (response.ok) {
       const data = await response.json();
       console.log(data);
-      displayData(data.data);
+      displayData(data.data[2]);
     } else {
       throw Error(await response.text());
     }
