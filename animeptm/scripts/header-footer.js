@@ -40,7 +40,7 @@ function animateMenuIcon() {
 }
 
 navLinks.forEach(link => {
-  if(link.getAttribute('href') === currentPage || link.getAttribute('href') === `${currentPage}#` || link.getAttribute('href') === currentPageName[0]) {
+  if(link.getAttribute('href') === currentPage || link.getAttribute('href') === `${currentPage}/#` || link.getAttribute('href') === currentPageName[0]) {
     link.classList.add('js-active');
   }
 });
