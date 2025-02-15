@@ -6,7 +6,7 @@
 body {
     display: grid;
     grid: 50px auto 80px / auto;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     font-family: 'fuzzy-bubbles', sans-serif;
 }
 
@@ -202,6 +202,8 @@ h2 {
     font-weight: bold;
 }
 
+/* ============================================================== FOOTER ============================================================== */
+
 .social-media__container {
     display: flex;
     flex-direction: column;
@@ -233,4 +235,10 @@ h2 {
 .social-media__link img {
     width: 24px;
     height: 24px;
+}
+
+/* ============================================================== Images Page ============================================================== */
+
+.gallery-main {
+    background-color: #292929;
 }
