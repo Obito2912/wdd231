@@ -1,31 +1,39 @@
 import { animeList } from "../data/images.mjs";
 
 const animeInfo = animeList;
-const imagesContainer = document.querySelector(".images__container");
-const imagesContainerDiv = document.querySelector('.images__container div');
+const galleryContainer = document.querySelector(".gallery__container");
 const path = "images/";
 
 function displayCards(info) {
-  let objectIndex = 0;
-  let imageIndex = 0;
   info.forEach((element) => {
-    createCard(element);
-    objectIndex++;
-    element.images.forEach((image) => {
-      imageIndex++;
-      imagesContainerDiv.innerHTML += `
-        <img src='${path}${image}' alt='${image} image' width='200' height='200' loading='lazy'>
-        `;
-    });
-  });
-}
+    const div = document.createElement("div");
+    div.setAttribute("class", "images__container");
+    const title = document.createElement("h2");
+    title.textContent = element.title;
+    div.append(title);
 
-function createCard(info) {
-  imagesContainer.innerHTML += `
-    <div class='card__content>
-        <h2>${info.title}</h2>
-    </div>
-    `;
+    element.images.forEach((image) => {
+      const imgEl = document.createElement("img");
+      imgEl.src = `${path}${image}`;
+      imgEl.alt = `${image} image`;
+      imgEl.width = 100;
+      imgEl.height = 100;
+      imgEl.loading = "lazy";
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            observer.unobserve(imgEl); // Stop observing once loaded
+            imgEl.removeAttribute("loading");
+          }
+        });
+      });
+
+      observer.observe(imgEl);
+      div.append(imgEl);
+    });
+    galleryContainer.append(div);
+  });
 }
 
 displayCards(animeInfo);

@@ -241,18 +241,19 @@ h2 {
 
 .gallery-main {
     background-color: #292929;
+    min-height: 100vh;
 }
 
-.images__container {
+.gallery__container {
     width: 90%;
     margin: 0 auto 20px;
     display: grid;
     gap: 10px;
-    min-height: 100vh;
 }
 
-.images__container div {
-    min-height: 150px;
+.images__container {
+    display: grid;
+    gap: 20px;
 }
 
 .images__container img {
@@ -265,5 +266,5 @@ h2 {
 .images__container h2{
     color: #e5f9e0;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0 -20px;
 }
