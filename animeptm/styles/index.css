@@ -164,6 +164,17 @@ h2 {
     margin-inline: auto;
 }
 
+.card dialog {
+    margin: auto;
+    padding: 2em;
+    background-color: #292929;
+    color: #fff;
+}
+
+.card dialog::backdrop {
+    background-color: #0000007a;
+}
+
 /* .card iframe {
     border: none;
     display: block;

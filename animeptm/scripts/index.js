@@ -8,6 +8,23 @@ async function getAnimeData() {
       const data = await response.json();
       console.log(data);
       displayData(data.data);
+
+      cardContainer.addEventListener("click", function (event) {
+        if (event.target.classList.contains("learn-more__button")) {
+          const card = event.target.closest(".card"); // Find the closest card
+          const dialog = card.querySelector("dialog"); // Find the dialog inside the card
+
+          if (dialog) {
+            dialog.showModal(); // Open the dialog
+          }
+        }
+      });
+
+      cardContainer.addEventListener("click", function (event) {
+        if (event.target.classList.contains("close-dialog")) {
+          event.target.closest("dialog").close();
+        }
+      });
     } else {
       throw Error(await response.text());
     }
@@ -23,7 +40,13 @@ function createInfoCard(data, index) {
         <div>
             <h2>${data[index].title_english}</h2>
             <p class='synopsis'><strong>Synopsis:</strong> ${data[index].synopsis}</p>
-            <button>Learn More</button>
+            <button class='learn-more__button'>Learn More</button>
+            <dialog>
+              <h3>${data[index].title_english}</h3>
+              <p>${data[index].synopsis}</p>
+              <button class="close-dialog">Close</button>
+            </dialog>
+            </dialog>
         </div>
     </div>
     `;
@@ -40,35 +63,19 @@ function doNotShow(data, index) {
 }
 
 function displayData(data) {
-//   const maxCards = 15;
   let startIndex = 0;
-//   let cardsCreated = 0;
 
   for (let index = startIndex; index < data.length; index++) {
-    
     if (
       data[index] &&
       data[index].trailer &&
       data[index].trailer.embed_url &&
-      data[index].synopsis
+      data[index].synopsis &&
+      !doNotShow(data, index)
     ) {
-      if (!doNotShow(data, index)) {
-        createInfoCard(data, index);
-      }
+      createInfoCard(data, index);
     }
   }
 }
 
 getAnimeData();
-
-// <iframe
-//     src='${data[index].trailer.embed_url}'
-//     allowfullscreen
-//     allow="accelerometer;
-//         clipboard-write;
-//         encrypted-media;
-//         gyroscope;
-//         picture-in-picture;
-//         web-share"
-//     referrerpolicy="strict-origin-when-cross-origin">
-// </iframe>
