@@ -266,5 +266,5 @@ h2 {
 .images__container h2{
     color: #e5f9e0;
     text-align: center;
-    margin: 20px 0 -20px;
+    margin: 20px auto -20px;
 }
