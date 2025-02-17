@@ -81,8 +81,18 @@
 
     .card button {
         margin: 10px auto 10px;
+        cursor: pointer;
     }
-
+    
+    .card button:hover {
+        background-color: #000;
+        color: #fff;
+    }
+    
+    .card button:active {
+        background-color: #ac4e4e;
+    }
+    
     .card div {
         grid-area: cardDiv;
     }
@@ -115,10 +125,11 @@
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
     .card__container {
         grid-template-columns: repeat(2, 1fr);
         width: 80%;
+        max-width: 1000px;
         margin-inline: auto;
     }
 

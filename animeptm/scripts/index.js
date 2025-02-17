@@ -9,9 +9,10 @@ sidebar.classList.add("message");
 const main = document.querySelector(".main");
 
 if (!lastVisit) {
-  sidebar.textContent = "Welcome to our new project AnimePTM. Hope you enjoy it!";
+  sidebar.textContent =
+    "Welcome to our new project AnimePTM. Hope you enjoy it!";
 } else {
-    sidebar.textContent = "We missed you. Welcome back and enjoy!!!";
+  sidebar.textContent = "We missed you. Welcome back and enjoy!!!";
 }
 
 localStorage.setItem("lastVisit", now);
@@ -85,8 +86,7 @@ function displayData(data) {
   for (let index = startIndex; index < data.length; index++) {
     if (
       data[index] &&
-      data[index].trailer &&
-      data[index].trailer.embed_url &&
+      data[index].title_english &&
       data[index].synopsis &&
       !doNotShow(data, index)
     ) {

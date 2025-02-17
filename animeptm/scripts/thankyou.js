@@ -16,7 +16,7 @@ const showInfo = document.querySelector('.thankyou-main');
 showInfo.innerHTML = `
 <div>
 <h1>Thank you for your support!</p> 
-<h2>We will be notified via email once the feature is available</h2>
+<h2>You will be notified via email once the feature is available</h2>
 <p><strong>First Name: </strong>${show('first')}</p>
 <p><strong>Last Name: </strong>${show('last')}</p>
 <p><strong>Email: </strong>${show('email')}</p>
