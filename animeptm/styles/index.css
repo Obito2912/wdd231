@@ -134,6 +134,13 @@ header {
     background-color: #292929;
 }
 
+.message {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    color: #fff;
+}
+
 h1 {
     margin: 10px auto 0;
     text-align: center;
@@ -166,30 +173,32 @@ h2 {
 
 .card dialog {
     margin: auto;
-    padding: 2em;
+    padding: 0 1em 1em;
     background-color: #292929;
     color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.card dialog h3 {
+    margin: 10px 0 20px;
 }
 
 .card dialog::backdrop {
     background-color: #0000007a;
 }
 
-/* .card iframe {
-    border: none;
-    display: block;
-    max-width: 525px;
-    margin: 0 auto 10px;
-    width: 100%;
-    height: auto;
-    } */
+.card dialog button:active {
+    background-color: #ac4e4e;
+    color: #fff;
+}
 
 .card img {
     display: block;
     margin: 0 auto 10px;
     width: 280px;
     height: auto;
-
+    
 }
 
 .synopsis {
@@ -211,6 +220,11 @@ h2 {
     border: none;
     border-radius: 5px;
     font-weight: bold;
+}
+
+.card button:active {
+    background-color: #ac4e4e;
+    color: #fff;
 }
 
 /* ============================================================== FOOTER ============================================================== */
@@ -274,8 +288,133 @@ h2 {
     height: auto;
 }
 
-.images__container h2{
+.images__container h2,
+.images__container p {
     color: #e5f9e0;
     text-align: center;
-    margin: 20px auto -20px;
+    margin: 20px auto -40PX;
+}
+
+.images__container p:last-of-type {
+    margin-bottom: -10px;
+}
+
+/* ============================================================== Review Page ============================================================== */
+
+.review-main {
+    background-color: #292929;
+}
+
+.review-main>p {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.form {
+    width: 95%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #FBAA00;
+    padding: .5em;
+    color: #fff;
+    display: grid;
+    gap: 15px;
+    margin: 0 auto 20px; 
+}
+
+.thankyou-main {
+    background-color: #292929;
+    display: flex;
+}
+
+.thankyou-main div {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid #FBAA00;
+    border-radius: 5px;
+    padding: .5em;
+}
+
+.thankyou-main h1 {
+    width: auto;
+}
+
+.thankyou-main h2 {
+    color: #eb9494;
+    margin: 10px 0 30px;
+    width: auto;
+}
+
+.thankyou-main p {
+    color: #fff;
+}
+
+.thankyou-main strong {
+    color: #eb9494;
+}
+
+.form fieldset {
+    border-radius: 5px;
+    border: 1px solid #FBAA00;
+    width: 100%;
+}
+
+.form legend {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.form label,
+.form select {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form label span {
+    color: #fed7fd;
+}
+
+.form label:last-of-type {
+    margin-bottom: 0;
+}
+
+.form input,
+.form textarea,
+.form select {
+    display: block;
+    height: 3em;
+    width: 100%;
+    resize: vertical;
+    padding: .5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.form textarea {
+    min-height: 4em;
+}
+
+.form input[type=submit] {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #003049;
+    cursor: pointer;
+    height: 3em;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.form input[type=submit]:active {
+    color: #FBAA00;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus,
+.section2 div button:focus,
+.dialog .close:focus {
+    outline: 2px solid #a86262;
 }

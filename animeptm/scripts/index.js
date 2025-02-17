@@ -1,5 +1,22 @@
 const animeURL = "https://api.jikan.moe/v4/anime";
 const cardContainer = document.querySelector(".card__container");
+const theDateToday = new Date();
+const now = theDateToday.getTime();
+const lastVisit = localStorage.getItem("lastVisit");
+const sidebar = document.createElement("div");
+sidebar.classList.add("message");
+
+const main = document.querySelector(".main");
+
+if (!lastVisit) {
+  sidebar.textContent = "Welcome to our new project AnimePTM. Hope you enjoy it!";
+} else {
+    sidebar.textContent = "We missed you. Welcome back and enjoy!!!";
+}
+
+localStorage.setItem("lastVisit", now);
+
+main.prepend(sidebar);
 
 async function getAnimeData() {
   try {

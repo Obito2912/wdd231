@@ -10,7 +10,17 @@ function displayCards(info) {
     div.setAttribute("class", "images__container");
     const title = document.createElement("h2");
     title.textContent = element.title;
+    const rating = document.createElement('p');
+    rating.textContent = element.rating;
+    const genreEl = document.createElement('p');
+
+    element.genres.forEach(genre => {
+      genreEl.textContent += `${genre}, `;
+    });
+
     div.append(title);
+    div.append(rating);
+    div.append(genreEl);
 
     element.images.forEach((image) => {
       const imgEl = document.createElement("img");
@@ -23,7 +33,7 @@ function displayCards(info) {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            observer.unobserve(imgEl); // Stop observing once loaded
+            observer.unobserve(imgEl);
             imgEl.removeAttribute("loading");
           }
         });

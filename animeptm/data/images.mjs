@@ -1,7 +1,8 @@
 export const animeList = [
   {
     title: "Attack on Titan",
-    genre: ["Action", "Drama", "Fantasy"],
+    genres: ["Action", "Drama", "Fantasy"],
+    rating: '4.8 stars',
     images: [
       "attack-on-titan1.webp",
       "attack-on-titan2.webp",
@@ -12,7 +13,8 @@ export const animeList = [
   },
   {
     title: "Demon Slayer",
-    genre: ["Action", "Fantasy"],
+    genres: ["Action", "Fantasy"],
+    rating: '4.5 stars',
     images: [
         "demon-slayer1.webp",
         "demon-slayer2.webp",
@@ -23,7 +25,8 @@ export const animeList = [
   },
   {
     title: "One Piece",
-    genre: ["Action", "Adventure"],
+    genres: ["Action", "Adventure"],
+    rating: '4.9 stars',
     images: [
         "one-piece1.webp",
         "one-piece2.webp",
@@ -34,7 +37,8 @@ export const animeList = [
   },
   {
     title: "Jujutsu Kaisen",
-    genre: ["Action", "Fantasy"],
+    genres: ["Action", "Fantasy"],
+    rating: '4.5 stars',
     images: [
         "jujutsu-kaisen1.webp",
         "jujutsu-kaisen2.webp",
@@ -45,7 +49,8 @@ export const animeList = [
   },
   {
     title: "My Hero Academia",
-    genre: ["Action", "Adventure"],
+    genres: ["Action", "Adventure"],
+    rating: '4.1 stars',
     images: [
         "my-hero-academy1.webp",
         "my-hero-academy2.webp",
@@ -56,7 +61,8 @@ export const animeList = [
   },
   {
     title: "Naruto",
-    genre: ["Action", "Adventure"],
+    genres: ["Action", "Adventure"],
+    rating: '4.8 stars',
     images: [
         "naruto1.webp",
         "naruto2.webp",
@@ -67,7 +73,8 @@ export const animeList = [
   },
   {
     title: "Death Note",
-    genre: ["Mystery", "Thriller"],
+    genres: ["Mystery", "Thriller"],
+    rating: '4.5 stars',
     images: [
         "death-note1.webp",
         "death-note2.webp",
@@ -78,7 +85,8 @@ export const animeList = [
   },
   {
     title: "Fullmetal Alchemist: Brotherhood",
-    genre: ["Action", "Fantasy"],
+    genres: ["Action", "Fantasy"],
+    rating: '4.7 stars',
     images: [
         "fullmetal-alchemist1.webp",
         "fullmetal-alchemist2.webp",
@@ -89,7 +97,8 @@ export const animeList = [
   },
   {
     title: "Hunter x Hunter",
-    genre: ["Action", "Adventure"],
+    genres: ["Action", "Adventure"],
+    rating: '4.8 stars',
     images: [
         "hunter-x-hunter1.webp",
         "hunter-x-hunter2.webp",
@@ -100,7 +109,8 @@ export const animeList = [
   },
   {
     title: "One Punch Man",
-    genre: ["Action", "Comedy"],
+    genres: ["Action", "Comedy"],
+    rating: '4.7 stars',
     images: [
         "one-punch-man1.webp",
         "one-punch-man2.webp",
@@ -111,7 +121,8 @@ export const animeList = [
   },
   {
     title: "Sword Art Online",
-    genre: ["Action", "Adventure"],
+    genres: ["Action", "Adventure"],
+    rating: '3.9 stars',
     images: [
         "sword-art-online1.webp",
         "sword-art-online2.webp",
@@ -122,7 +133,8 @@ export const animeList = [
   },
   {
     title: "Tokyo Ghoul",
-    genre: ["Action", "Horror"],
+    genres: ["Action", "Horror"],
+    rating: '3.5 stars',
     images: [
         "tokyo-ghoul1.webp",
         "tokyo-ghoul2.webp",
@@ -133,7 +145,8 @@ export const animeList = [
   },
   {
     title: "Parasyte",
-    genre: ["Action", "Horror"],
+    genres: ["Action", "Horror"],
+    rating: '3.5 stars',
     images: [
         "parasyte1.webp",
         "parasyte2.webp",
