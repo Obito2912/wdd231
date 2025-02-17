@@ -52,7 +52,6 @@
     }
 
     .nav-menu__link:active {
-        background-color: none;
         color: #000;
     }
 
@@ -69,7 +68,6 @@
 
     .synopsis {
         -webkit-line-clamp: 10;
-        line-clamp: 10;
         margin: 0;
     }
 
@@ -92,7 +90,7 @@
     .card button:active {
         background-color: #ac4e4e;
     }
-    
+
     .card div {
         grid-area: cardDiv;
     }
